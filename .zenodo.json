@@ -1,0 +1,15 @@
+{
+  "title": "vitrob: Risk-of-Bias Assessment of In Vitro Experiments with VITROB",
+  "upload_type": "software",
+  "description": "<p>R package implementing VITROB, a result-level, algorithm-based risk-of-bias tool for in vitro experiments modelled on RoB 2 and ROBINS-I V2. It proposes domain and overall judgments, checks assessments for entry errors, draws traffic-light, summary, answer and reporting-gap plots, includes a point-and-click app, and verifies the judgment algorithms exhaustively against an independent implementation. Code: MIT licence. Tool content (questions, algorithms, template): CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Bellos, Ioannis",
+      "affiliation": "Department of Preventive Medicine, Epidemiology and Medical Statistics, School of Medicine, National and Kapodistrian University of Athens, Greece",
+      "orcid": "0000-0001-5088-5458"
+    }
+  ],
+  "license": "MIT",
+  "keywords": ["risk of bias", "in vitro", "systematic review", "meta-analysis", "evidence synthesis", "R"],
+  "access_right": "open"
+}

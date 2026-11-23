@@ -1,0 +1,26 @@
+# Re-runs the independent Python verification of the VITROB algorithms and
+# fails if tool.yaml no longer passes, or if the reference files in
+# inst/extdata are out of date with tool.yaml.
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+name: verify-spec
+
+permissions: read-all
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+      - name: Verify algorithms
+        run: python tools/verify_algorithms.py
+      - name: Reference files match tool.yaml
+        run: git diff --exit-code -- inst/extdata

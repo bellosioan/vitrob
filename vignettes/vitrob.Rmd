@@ -1,0 +1,142 @@
+---
+title: "Getting started with vitrob"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with vitrob}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
+                      fig.width = 7, fig.height = 4.5, dpi = 96)
+```
+
+VITROB assesses the risk of bias in one specified result from an in vitro
+experiment. Reviewers answer signalling questions in six domains; the
+package applies the published algorithms to propose a judgment for each
+domain (Low, Some concerns or High) and overall, checks the answers for
+entry errors, and draws the standard figures.
+
+```{r}
+library(vitrob)
+```
+
+## 1. Record the assessments
+
+Write an empty entry sheet, one row per assessed result:
+
+```{r, eval = FALSE}
+write_template("my_assessments.csv")
+```
+
+An Excel version with drop-down answers and the full question text is
+installed with the package:
+
+```{r, eval = FALSE}
+system.file("extdata", "assessment_template.xlsx", package = "vitrob")
+```
+
+Answer each signalling question with `Y`, `PY`, `PN`, `N` or `NI`, and leave
+a question blank when its "asked if" condition is not met.
+`questions_table()` lists every question with its condition, guidance and
+references:
+
+```{r}
+q <- questions_table()
+head(q[, c("domain", "id", "short", "ask_if")])
+```
+
+## 2. Read and check them
+
+This vignette uses the 12 fictional results bundled with the package.
+
+```{r}
+ex <- read_assessments(system.file("extdata", "example_assessments.csv",
+                                   package = "vitrob"))
+check_assessments(ex)
+```
+
+`check_assessments()` lists invalid codes, missing required answers,
+answers to questions that should have been skipped, overrides without a
+reason and inconsistent overall judgments. An empty result means no
+problems were found.
+
+## 3. Proposed judgments
+
+```{r}
+res <- propose_judgments(ex)
+res[, c("study_id", paste0("D", 1:6, "_proposed"), "overall_proposed")]
+```
+
+Assessors can override a proposed judgment by entering a different one in
+the `<domain>_final` column with a reason in `<domain>_reason`; the plots
+use the final judgment where one is given.
+
+A single result can also be assessed directly from a named vector of
+answers:
+
+```{r}
+propose_domain("D1", c("1.1" = "Y", "1.3" = "N"))
+```
+
+## 4. Figures
+
+Traffic-light plot, one row per result:
+
+```{r, fig.height = 5.5}
+plot_traffic(ex)
+```
+
+Share of judgments in each domain (pass `weight` for meta-analysis weights):
+
+```{r, fig.height = 3.5}
+plot_summary(ex)
+```
+
+Every signalling-question answer, coloured by whether it points towards low
+or high risk:
+
+```{r, fig.height = 5.5}
+plot_questions(ex)
+```
+
+Where primary studies most often fail to report (share of "No information"
+answers per question):
+
+```{r, fig.height = 5}
+plot_gaps(ex)
+```
+
+The default colours are blue, amber and red, which remain distinguishable
+with the common forms of colour-vision deficiency; `palette = "cochrane"`
+gives green, amber and red. Every judgment also has a symbol (+, −, ×).
+
+Save a figure at journal resolution with a height that fits the number of
+rows:
+
+```{r, eval = FALSE}
+save_rob_plot(plot_traffic(ex), "traffic_light.png")
+save_rob_plot(plot_traffic(ex), "traffic_light.pdf")
+```
+
+## 5. Point-and-click app
+
+Reviewers who do not use R can upload a filled CSV or Excel sheet, see the
+checks, judgments and figures, and download them:
+
+```{r, eval = FALSE}
+run_app()
+```
+
+## 6. Checking the algorithms
+
+`verify_algorithms()` enumerates every valid combination of answers in every
+domain and confirms that the rules never propose Low and High together, that
+every judgment is reachable, that a worse answer never gives a better
+judgment, and that every question can change the judgment.
+
+```{r}
+v <- verify_algorithms()
+v[, c("domain", "profiles", "passed")]
+```

@@ -1,0 +1,958 @@
+D1,D2,D3,D4,D5,D6,O1,overall
+Low,Low,Low,Low,Low,Low,NA,Low
+Low,Low,Low,Low,Low,Some concerns,NA,Some concerns
+Low,Low,Low,Low,Low,High,NA,High
+Low,Low,Low,Low,Some concerns,Low,NA,Some concerns
+Low,Low,Low,Low,Some concerns,Some concerns,Y,High
+Low,Low,Low,Low,Some concerns,Some concerns,PY,High
+Low,Low,Low,Low,Some concerns,Some concerns,PN,Some concerns
+Low,Low,Low,Low,Some concerns,Some concerns,N,Some concerns
+Low,Low,Low,Low,Some concerns,Some concerns,NI,Some concerns
+Low,Low,Low,Low,Some concerns,High,NA,High
+Low,Low,Low,Low,High,Low,NA,High
+Low,Low,Low,Low,High,Some concerns,NA,High
+Low,Low,Low,Low,High,High,NA,High
+Low,Low,Low,Some concerns,Low,Low,NA,Some concerns
+Low,Low,Low,Some concerns,Low,Some concerns,Y,High
+Low,Low,Low,Some concerns,Low,Some concerns,PY,High
+Low,Low,Low,Some concerns,Low,Some concerns,PN,Some concerns
+Low,Low,Low,Some concerns,Low,Some concerns,N,Some concerns
+Low,Low,Low,Some concerns,Low,Some concerns,NI,Some concerns
+Low,Low,Low,Some concerns,Low,High,NA,High
+Low,Low,Low,Some concerns,Some concerns,Low,Y,High
+Low,Low,Low,Some concerns,Some concerns,Low,PY,High
+Low,Low,Low,Some concerns,Some concerns,Low,PN,Some concerns
+Low,Low,Low,Some concerns,Some concerns,Low,N,Some concerns
+Low,Low,Low,Some concerns,Some concerns,Low,NI,Some concerns
+Low,Low,Low,Some concerns,Some concerns,Some concerns,Y,High
+Low,Low,Low,Some concerns,Some concerns,Some concerns,PY,High
+Low,Low,Low,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Low,Low,Low,Some concerns,Some concerns,Some concerns,N,Some concerns
+Low,Low,Low,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Low,Low,Low,Some concerns,Some concerns,High,NA,High
+Low,Low,Low,Some concerns,High,Low,NA,High
+Low,Low,Low,Some concerns,High,Some concerns,NA,High
+Low,Low,Low,Some concerns,High,High,NA,High
+Low,Low,Low,High,Low,Low,NA,High
+Low,Low,Low,High,Low,Some concerns,NA,High
+Low,Low,Low,High,Low,High,NA,High
+Low,Low,Low,High,Some concerns,Low,NA,High
+Low,Low,Low,High,Some concerns,Some concerns,NA,High
+Low,Low,Low,High,Some concerns,High,NA,High
+Low,Low,Low,High,High,Low,NA,High
+Low,Low,Low,High,High,Some concerns,NA,High
+Low,Low,Low,High,High,High,NA,High
+Low,Low,Some concerns,Low,Low,Low,NA,Some concerns
+Low,Low,Some concerns,Low,Low,Some concerns,Y,High
+Low,Low,Some concerns,Low,Low,Some concerns,PY,High
+Low,Low,Some concerns,Low,Low,Some concerns,PN,Some concerns
+Low,Low,Some concerns,Low,Low,Some concerns,N,Some concerns
+Low,Low,Some concerns,Low,Low,Some concerns,NI,Some concerns
+Low,Low,Some concerns,Low,Low,High,NA,High
+Low,Low,Some concerns,Low,Some concerns,Low,Y,High
+Low,Low,Some concerns,Low,Some concerns,Low,PY,High
+Low,Low,Some concerns,Low,Some concerns,Low,PN,Some concerns
+Low,Low,Some concerns,Low,Some concerns,Low,N,Some concerns
+Low,Low,Some concerns,Low,Some concerns,Low,NI,Some concerns
+Low,Low,Some concerns,Low,Some concerns,Some concerns,Y,High
+Low,Low,Some concerns,Low,Some concerns,Some concerns,PY,High
+Low,Low,Some concerns,Low,Some concerns,Some concerns,PN,Some concerns
+Low,Low,Some concerns,Low,Some concerns,Some concerns,N,Some concerns
+Low,Low,Some concerns,Low,Some concerns,Some concerns,NI,Some concerns
+Low,Low,Some concerns,Low,Some concerns,High,NA,High
+Low,Low,Some concerns,Low,High,Low,NA,High
+Low,Low,Some concerns,Low,High,Some concerns,NA,High
+Low,Low,Some concerns,Low,High,High,NA,High
+Low,Low,Some concerns,Some concerns,Low,Low,Y,High
+Low,Low,Some concerns,Some concerns,Low,Low,PY,High
+Low,Low,Some concerns,Some concerns,Low,Low,PN,Some concerns
+Low,Low,Some concerns,Some concerns,Low,Low,N,Some concerns
+Low,Low,Some concerns,Some concerns,Low,Low,NI,Some concerns
+Low,Low,Some concerns,Some concerns,Low,Some concerns,Y,High
+Low,Low,Some concerns,Some concerns,Low,Some concerns,PY,High
+Low,Low,Some concerns,Some concerns,Low,Some concerns,PN,Some concerns
+Low,Low,Some concerns,Some concerns,Low,Some concerns,N,Some concerns
+Low,Low,Some concerns,Some concerns,Low,Some concerns,NI,Some concerns
+Low,Low,Some concerns,Some concerns,Low,High,NA,High
+Low,Low,Some concerns,Some concerns,Some concerns,Low,Y,High
+Low,Low,Some concerns,Some concerns,Some concerns,Low,PY,High
+Low,Low,Some concerns,Some concerns,Some concerns,Low,PN,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,Low,N,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,Low,NI,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,Some concerns,Y,High
+Low,Low,Some concerns,Some concerns,Some concerns,Some concerns,PY,High
+Low,Low,Some concerns,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,Some concerns,N,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Low,Low,Some concerns,Some concerns,Some concerns,High,NA,High
+Low,Low,Some concerns,Some concerns,High,Low,NA,High
+Low,Low,Some concerns,Some concerns,High,Some concerns,NA,High
+Low,Low,Some concerns,Some concerns,High,High,NA,High
+Low,Low,Some concerns,High,Low,Low,NA,High
+Low,Low,Some concerns,High,Low,Some concerns,NA,High
+Low,Low,Some concerns,High,Low,High,NA,High
+Low,Low,Some concerns,High,Some concerns,Low,NA,High
+Low,Low,Some concerns,High,Some concerns,Some concerns,NA,High
+Low,Low,Some concerns,High,Some concerns,High,NA,High
+Low,Low,Some concerns,High,High,Low,NA,High
+Low,Low,Some concerns,High,High,Some concerns,NA,High
+Low,Low,Some concerns,High,High,High,NA,High
+Low,Low,High,Low,Low,Low,NA,High
+Low,Low,High,Low,Low,Some concerns,NA,High
+Low,Low,High,Low,Low,High,NA,High
+Low,Low,High,Low,Some concerns,Low,NA,High
+Low,Low,High,Low,Some concerns,Some concerns,NA,High
+Low,Low,High,Low,Some concerns,High,NA,High
+Low,Low,High,Low,High,Low,NA,High
+Low,Low,High,Low,High,Some concerns,NA,High
+Low,Low,High,Low,High,High,NA,High
+Low,Low,High,Some concerns,Low,Low,NA,High
+Low,Low,High,Some concerns,Low,Some concerns,NA,High
+Low,Low,High,Some concerns,Low,High,NA,High
+Low,Low,High,Some concerns,Some concerns,Low,NA,High
+Low,Low,High,Some concerns,Some concerns,Some concerns,NA,High
+Low,Low,High,Some concerns,Some concerns,High,NA,High
+Low,Low,High,Some concerns,High,Low,NA,High
+Low,Low,High,Some concerns,High,Some concerns,NA,High
+Low,Low,High,Some concerns,High,High,NA,High
+Low,Low,High,High,Low,Low,NA,High
+Low,Low,High,High,Low,Some concerns,NA,High
+Low,Low,High,High,Low,High,NA,High
+Low,Low,High,High,Some concerns,Low,NA,High
+Low,Low,High,High,Some concerns,Some concerns,NA,High
+Low,Low,High,High,Some concerns,High,NA,High
+Low,Low,High,High,High,Low,NA,High
+Low,Low,High,High,High,Some concerns,NA,High
+Low,Low,High,High,High,High,NA,High
+Low,Some concerns,Low,Low,Low,Low,NA,Some concerns
+Low,Some concerns,Low,Low,Low,Some concerns,Y,High
+Low,Some concerns,Low,Low,Low,Some concerns,PY,High
+Low,Some concerns,Low,Low,Low,Some concerns,PN,Some concerns
+Low,Some concerns,Low,Low,Low,Some concerns,N,Some concerns
+Low,Some concerns,Low,Low,Low,Some concerns,NI,Some concerns
+Low,Some concerns,Low,Low,Low,High,NA,High
+Low,Some concerns,Low,Low,Some concerns,Low,Y,High
+Low,Some concerns,Low,Low,Some concerns,Low,PY,High
+Low,Some concerns,Low,Low,Some concerns,Low,PN,Some concerns
+Low,Some concerns,Low,Low,Some concerns,Low,N,Some concerns
+Low,Some concerns,Low,Low,Some concerns,Low,NI,Some concerns
+Low,Some concerns,Low,Low,Some concerns,Some concerns,Y,High
+Low,Some concerns,Low,Low,Some concerns,Some concerns,PY,High
+Low,Some concerns,Low,Low,Some concerns,Some concerns,PN,Some concerns
+Low,Some concerns,Low,Low,Some concerns,Some concerns,N,Some concerns
+Low,Some concerns,Low,Low,Some concerns,Some concerns,NI,Some concerns
+Low,Some concerns,Low,Low,Some concerns,High,NA,High
+Low,Some concerns,Low,Low,High,Low,NA,High
+Low,Some concerns,Low,Low,High,Some concerns,NA,High
+Low,Some concerns,Low,Low,High,High,NA,High
+Low,Some concerns,Low,Some concerns,Low,Low,Y,High
+Low,Some concerns,Low,Some concerns,Low,Low,PY,High
+Low,Some concerns,Low,Some concerns,Low,Low,PN,Some concerns
+Low,Some concerns,Low,Some concerns,Low,Low,N,Some concerns
+Low,Some concerns,Low,Some concerns,Low,Low,NI,Some concerns
+Low,Some concerns,Low,Some concerns,Low,Some concerns,Y,High
+Low,Some concerns,Low,Some concerns,Low,Some concerns,PY,High
+Low,Some concerns,Low,Some concerns,Low,Some concerns,PN,Some concerns
+Low,Some concerns,Low,Some concerns,Low,Some concerns,N,Some concerns
+Low,Some concerns,Low,Some concerns,Low,Some concerns,NI,Some concerns
+Low,Some concerns,Low,Some concerns,Low,High,NA,High
+Low,Some concerns,Low,Some concerns,Some concerns,Low,Y,High
+Low,Some concerns,Low,Some concerns,Some concerns,Low,PY,High
+Low,Some concerns,Low,Some concerns,Some concerns,Low,PN,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,Low,N,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,Low,NI,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,Some concerns,Y,High
+Low,Some concerns,Low,Some concerns,Some concerns,Some concerns,PY,High
+Low,Some concerns,Low,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,Some concerns,N,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Low,Some concerns,Low,Some concerns,Some concerns,High,NA,High
+Low,Some concerns,Low,Some concerns,High,Low,NA,High
+Low,Some concerns,Low,Some concerns,High,Some concerns,NA,High
+Low,Some concerns,Low,Some concerns,High,High,NA,High
+Low,Some concerns,Low,High,Low,Low,NA,High
+Low,Some concerns,Low,High,Low,Some concerns,NA,High
+Low,Some concerns,Low,High,Low,High,NA,High
+Low,Some concerns,Low,High,Some concerns,Low,NA,High
+Low,Some concerns,Low,High,Some concerns,Some concerns,NA,High
+Low,Some concerns,Low,High,Some concerns,High,NA,High
+Low,Some concerns,Low,High,High,Low,NA,High
+Low,Some concerns,Low,High,High,Some concerns,NA,High
+Low,Some concerns,Low,High,High,High,NA,High
+Low,Some concerns,Some concerns,Low,Low,Low,Y,High
+Low,Some concerns,Some concerns,Low,Low,Low,PY,High
+Low,Some concerns,Some concerns,Low,Low,Low,PN,Some concerns
+Low,Some concerns,Some concerns,Low,Low,Low,N,Some concerns
+Low,Some concerns,Some concerns,Low,Low,Low,NI,Some concerns
+Low,Some concerns,Some concerns,Low,Low,Some concerns,Y,High
+Low,Some concerns,Some concerns,Low,Low,Some concerns,PY,High
+Low,Some concerns,Some concerns,Low,Low,Some concerns,PN,Some concerns
+Low,Some concerns,Some concerns,Low,Low,Some concerns,N,Some concerns
+Low,Some concerns,Some concerns,Low,Low,Some concerns,NI,Some concerns
+Low,Some concerns,Some concerns,Low,Low,High,NA,High
+Low,Some concerns,Some concerns,Low,Some concerns,Low,Y,High
+Low,Some concerns,Some concerns,Low,Some concerns,Low,PY,High
+Low,Some concerns,Some concerns,Low,Some concerns,Low,PN,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,Low,N,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,Low,NI,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,Some concerns,Y,High
+Low,Some concerns,Some concerns,Low,Some concerns,Some concerns,PY,High
+Low,Some concerns,Some concerns,Low,Some concerns,Some concerns,PN,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,Some concerns,N,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,Some concerns,NI,Some concerns
+Low,Some concerns,Some concerns,Low,Some concerns,High,NA,High
+Low,Some concerns,Some concerns,Low,High,Low,NA,High
+Low,Some concerns,Some concerns,Low,High,Some concerns,NA,High
+Low,Some concerns,Some concerns,Low,High,High,NA,High
+Low,Some concerns,Some concerns,Some concerns,Low,Low,Y,High
+Low,Some concerns,Some concerns,Some concerns,Low,Low,PY,High
+Low,Some concerns,Some concerns,Some concerns,Low,Low,PN,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,Low,N,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,Low,NI,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,Some concerns,Y,High
+Low,Some concerns,Some concerns,Some concerns,Low,Some concerns,PY,High
+Low,Some concerns,Some concerns,Some concerns,Low,Some concerns,PN,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,Some concerns,N,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,Some concerns,NI,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Low,High,NA,High
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Low,Y,High
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Low,PY,High
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Low,PN,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Low,N,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Low,NI,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Y,High
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,PY,High
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,N,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Low,Some concerns,Some concerns,Some concerns,Some concerns,High,NA,High
+Low,Some concerns,Some concerns,Some concerns,High,Low,NA,High
+Low,Some concerns,Some concerns,Some concerns,High,Some concerns,NA,High
+Low,Some concerns,Some concerns,Some concerns,High,High,NA,High
+Low,Some concerns,Some concerns,High,Low,Low,NA,High
+Low,Some concerns,Some concerns,High,Low,Some concerns,NA,High
+Low,Some concerns,Some concerns,High,Low,High,NA,High
+Low,Some concerns,Some concerns,High,Some concerns,Low,NA,High
+Low,Some concerns,Some concerns,High,Some concerns,Some concerns,NA,High
+Low,Some concerns,Some concerns,High,Some concerns,High,NA,High
+Low,Some concerns,Some concerns,High,High,Low,NA,High
+Low,Some concerns,Some concerns,High,High,Some concerns,NA,High
+Low,Some concerns,Some concerns,High,High,High,NA,High
+Low,Some concerns,High,Low,Low,Low,NA,High
+Low,Some concerns,High,Low,Low,Some concerns,NA,High
+Low,Some concerns,High,Low,Low,High,NA,High
+Low,Some concerns,High,Low,Some concerns,Low,NA,High
+Low,Some concerns,High,Low,Some concerns,Some concerns,NA,High
+Low,Some concerns,High,Low,Some concerns,High,NA,High
+Low,Some concerns,High,Low,High,Low,NA,High
+Low,Some concerns,High,Low,High,Some concerns,NA,High
+Low,Some concerns,High,Low,High,High,NA,High
+Low,Some concerns,High,Some concerns,Low,Low,NA,High
+Low,Some concerns,High,Some concerns,Low,Some concerns,NA,High
+Low,Some concerns,High,Some concerns,Low,High,NA,High
+Low,Some concerns,High,Some concerns,Some concerns,Low,NA,High
+Low,Some concerns,High,Some concerns,Some concerns,Some concerns,NA,High
+Low,Some concerns,High,Some concerns,Some concerns,High,NA,High
+Low,Some concerns,High,Some concerns,High,Low,NA,High
+Low,Some concerns,High,Some concerns,High,Some concerns,NA,High
+Low,Some concerns,High,Some concerns,High,High,NA,High
+Low,Some concerns,High,High,Low,Low,NA,High
+Low,Some concerns,High,High,Low,Some concerns,NA,High
+Low,Some concerns,High,High,Low,High,NA,High
+Low,Some concerns,High,High,Some concerns,Low,NA,High
+Low,Some concerns,High,High,Some concerns,Some concerns,NA,High
+Low,Some concerns,High,High,Some concerns,High,NA,High
+Low,Some concerns,High,High,High,Low,NA,High
+Low,Some concerns,High,High,High,Some concerns,NA,High
+Low,Some concerns,High,High,High,High,NA,High
+Low,High,Low,Low,Low,Low,NA,High
+Low,High,Low,Low,Low,Some concerns,NA,High
+Low,High,Low,Low,Low,High,NA,High
+Low,High,Low,Low,Some concerns,Low,NA,High
+Low,High,Low,Low,Some concerns,Some concerns,NA,High
+Low,High,Low,Low,Some concerns,High,NA,High
+Low,High,Low,Low,High,Low,NA,High
+Low,High,Low,Low,High,Some concerns,NA,High
+Low,High,Low,Low,High,High,NA,High
+Low,High,Low,Some concerns,Low,Low,NA,High
+Low,High,Low,Some concerns,Low,Some concerns,NA,High
+Low,High,Low,Some concerns,Low,High,NA,High
+Low,High,Low,Some concerns,Some concerns,Low,NA,High
+Low,High,Low,Some concerns,Some concerns,Some concerns,NA,High
+Low,High,Low,Some concerns,Some concerns,High,NA,High
+Low,High,Low,Some concerns,High,Low,NA,High
+Low,High,Low,Some concerns,High,Some concerns,NA,High
+Low,High,Low,Some concerns,High,High,NA,High
+Low,High,Low,High,Low,Low,NA,High
+Low,High,Low,High,Low,Some concerns,NA,High
+Low,High,Low,High,Low,High,NA,High
+Low,High,Low,High,Some concerns,Low,NA,High
+Low,High,Low,High,Some concerns,Some concerns,NA,High
+Low,High,Low,High,Some concerns,High,NA,High
+Low,High,Low,High,High,Low,NA,High
+Low,High,Low,High,High,Some concerns,NA,High
+Low,High,Low,High,High,High,NA,High
+Low,High,Some concerns,Low,Low,Low,NA,High
+Low,High,Some concerns,Low,Low,Some concerns,NA,High
+Low,High,Some concerns,Low,Low,High,NA,High
+Low,High,Some concerns,Low,Some concerns,Low,NA,High
+Low,High,Some concerns,Low,Some concerns,Some concerns,NA,High
+Low,High,Some concerns,Low,Some concerns,High,NA,High
+Low,High,Some concerns,Low,High,Low,NA,High
+Low,High,Some concerns,Low,High,Some concerns,NA,High
+Low,High,Some concerns,Low,High,High,NA,High
+Low,High,Some concerns,Some concerns,Low,Low,NA,High
+Low,High,Some concerns,Some concerns,Low,Some concerns,NA,High
+Low,High,Some concerns,Some concerns,Low,High,NA,High
+Low,High,Some concerns,Some concerns,Some concerns,Low,NA,High
+Low,High,Some concerns,Some concerns,Some concerns,Some concerns,NA,High
+Low,High,Some concerns,Some concerns,Some concerns,High,NA,High
+Low,High,Some concerns,Some concerns,High,Low,NA,High
+Low,High,Some concerns,Some concerns,High,Some concerns,NA,High
+Low,High,Some concerns,Some concerns,High,High,NA,High
+Low,High,Some concerns,High,Low,Low,NA,High
+Low,High,Some concerns,High,Low,Some concerns,NA,High
+Low,High,Some concerns,High,Low,High,NA,High
+Low,High,Some concerns,High,Some concerns,Low,NA,High
+Low,High,Some concerns,High,Some concerns,Some concerns,NA,High
+Low,High,Some concerns,High,Some concerns,High,NA,High
+Low,High,Some concerns,High,High,Low,NA,High
+Low,High,Some concerns,High,High,Some concerns,NA,High
+Low,High,Some concerns,High,High,High,NA,High
+Low,High,High,Low,Low,Low,NA,High
+Low,High,High,Low,Low,Some concerns,NA,High
+Low,High,High,Low,Low,High,NA,High
+Low,High,High,Low,Some concerns,Low,NA,High
+Low,High,High,Low,Some concerns,Some concerns,NA,High
+Low,High,High,Low,Some concerns,High,NA,High
+Low,High,High,Low,High,Low,NA,High
+Low,High,High,Low,High,Some concerns,NA,High
+Low,High,High,Low,High,High,NA,High
+Low,High,High,Some concerns,Low,Low,NA,High
+Low,High,High,Some concerns,Low,Some concerns,NA,High
+Low,High,High,Some concerns,Low,High,NA,High
+Low,High,High,Some concerns,Some concerns,Low,NA,High
+Low,High,High,Some concerns,Some concerns,Some concerns,NA,High
+Low,High,High,Some concerns,Some concerns,High,NA,High
+Low,High,High,Some concerns,High,Low,NA,High
+Low,High,High,Some concerns,High,Some concerns,NA,High
+Low,High,High,Some concerns,High,High,NA,High
+Low,High,High,High,Low,Low,NA,High
+Low,High,High,High,Low,Some concerns,NA,High
+Low,High,High,High,Low,High,NA,High
+Low,High,High,High,Some concerns,Low,NA,High
+Low,High,High,High,Some concerns,Some concerns,NA,High
+Low,High,High,High,Some concerns,High,NA,High
+Low,High,High,High,High,Low,NA,High
+Low,High,High,High,High,Some concerns,NA,High
+Low,High,High,High,High,High,NA,High
+Some concerns,Low,Low,Low,Low,Low,NA,Some concerns
+Some concerns,Low,Low,Low,Low,Some concerns,Y,High
+Some concerns,Low,Low,Low,Low,Some concerns,PY,High
+Some concerns,Low,Low,Low,Low,Some concerns,PN,Some concerns
+Some concerns,Low,Low,Low,Low,Some concerns,N,Some concerns
+Some concerns,Low,Low,Low,Low,Some concerns,NI,Some concerns
+Some concerns,Low,Low,Low,Low,High,NA,High
+Some concerns,Low,Low,Low,Some concerns,Low,Y,High
+Some concerns,Low,Low,Low,Some concerns,Low,PY,High
+Some concerns,Low,Low,Low,Some concerns,Low,PN,Some concerns
+Some concerns,Low,Low,Low,Some concerns,Low,N,Some concerns
+Some concerns,Low,Low,Low,Some concerns,Low,NI,Some concerns
+Some concerns,Low,Low,Low,Some concerns,Some concerns,Y,High
+Some concerns,Low,Low,Low,Some concerns,Some concerns,PY,High
+Some concerns,Low,Low,Low,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Low,Low,Low,Some concerns,Some concerns,N,Some concerns
+Some concerns,Low,Low,Low,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Low,Low,Low,Some concerns,High,NA,High
+Some concerns,Low,Low,Low,High,Low,NA,High
+Some concerns,Low,Low,Low,High,Some concerns,NA,High
+Some concerns,Low,Low,Low,High,High,NA,High
+Some concerns,Low,Low,Some concerns,Low,Low,Y,High
+Some concerns,Low,Low,Some concerns,Low,Low,PY,High
+Some concerns,Low,Low,Some concerns,Low,Low,PN,Some concerns
+Some concerns,Low,Low,Some concerns,Low,Low,N,Some concerns
+Some concerns,Low,Low,Some concerns,Low,Low,NI,Some concerns
+Some concerns,Low,Low,Some concerns,Low,Some concerns,Y,High
+Some concerns,Low,Low,Some concerns,Low,Some concerns,PY,High
+Some concerns,Low,Low,Some concerns,Low,Some concerns,PN,Some concerns
+Some concerns,Low,Low,Some concerns,Low,Some concerns,N,Some concerns
+Some concerns,Low,Low,Some concerns,Low,Some concerns,NI,Some concerns
+Some concerns,Low,Low,Some concerns,Low,High,NA,High
+Some concerns,Low,Low,Some concerns,Some concerns,Low,Y,High
+Some concerns,Low,Low,Some concerns,Some concerns,Low,PY,High
+Some concerns,Low,Low,Some concerns,Some concerns,Low,PN,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,Low,N,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,Low,NI,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,Some concerns,Y,High
+Some concerns,Low,Low,Some concerns,Some concerns,Some concerns,PY,High
+Some concerns,Low,Low,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,Some concerns,N,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Low,Low,Some concerns,Some concerns,High,NA,High
+Some concerns,Low,Low,Some concerns,High,Low,NA,High
+Some concerns,Low,Low,Some concerns,High,Some concerns,NA,High
+Some concerns,Low,Low,Some concerns,High,High,NA,High
+Some concerns,Low,Low,High,Low,Low,NA,High
+Some concerns,Low,Low,High,Low,Some concerns,NA,High
+Some concerns,Low,Low,High,Low,High,NA,High
+Some concerns,Low,Low,High,Some concerns,Low,NA,High
+Some concerns,Low,Low,High,Some concerns,Some concerns,NA,High
+Some concerns,Low,Low,High,Some concerns,High,NA,High
+Some concerns,Low,Low,High,High,Low,NA,High
+Some concerns,Low,Low,High,High,Some concerns,NA,High
+Some concerns,Low,Low,High,High,High,NA,High
+Some concerns,Low,Some concerns,Low,Low,Low,Y,High
+Some concerns,Low,Some concerns,Low,Low,Low,PY,High
+Some concerns,Low,Some concerns,Low,Low,Low,PN,Some concerns
+Some concerns,Low,Some concerns,Low,Low,Low,N,Some concerns
+Some concerns,Low,Some concerns,Low,Low,Low,NI,Some concerns
+Some concerns,Low,Some concerns,Low,Low,Some concerns,Y,High
+Some concerns,Low,Some concerns,Low,Low,Some concerns,PY,High
+Some concerns,Low,Some concerns,Low,Low,Some concerns,PN,Some concerns
+Some concerns,Low,Some concerns,Low,Low,Some concerns,N,Some concerns
+Some concerns,Low,Some concerns,Low,Low,Some concerns,NI,Some concerns
+Some concerns,Low,Some concerns,Low,Low,High,NA,High
+Some concerns,Low,Some concerns,Low,Some concerns,Low,Y,High
+Some concerns,Low,Some concerns,Low,Some concerns,Low,PY,High
+Some concerns,Low,Some concerns,Low,Some concerns,Low,PN,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,Low,N,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,Low,NI,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,Some concerns,Y,High
+Some concerns,Low,Some concerns,Low,Some concerns,Some concerns,PY,High
+Some concerns,Low,Some concerns,Low,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,Some concerns,N,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Low,Some concerns,Low,Some concerns,High,NA,High
+Some concerns,Low,Some concerns,Low,High,Low,NA,High
+Some concerns,Low,Some concerns,Low,High,Some concerns,NA,High
+Some concerns,Low,Some concerns,Low,High,High,NA,High
+Some concerns,Low,Some concerns,Some concerns,Low,Low,Y,High
+Some concerns,Low,Some concerns,Some concerns,Low,Low,PY,High
+Some concerns,Low,Some concerns,Some concerns,Low,Low,PN,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,Low,N,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,Low,NI,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,Some concerns,Y,High
+Some concerns,Low,Some concerns,Some concerns,Low,Some concerns,PY,High
+Some concerns,Low,Some concerns,Some concerns,Low,Some concerns,PN,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,Some concerns,N,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,Some concerns,NI,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Low,High,NA,High
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Low,Y,High
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Low,PY,High
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Low,PN,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Low,N,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Low,NI,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Some concerns,Y,High
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Some concerns,PY,High
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Some concerns,N,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Low,Some concerns,Some concerns,Some concerns,High,NA,High
+Some concerns,Low,Some concerns,Some concerns,High,Low,NA,High
+Some concerns,Low,Some concerns,Some concerns,High,Some concerns,NA,High
+Some concerns,Low,Some concerns,Some concerns,High,High,NA,High
+Some concerns,Low,Some concerns,High,Low,Low,NA,High
+Some concerns,Low,Some concerns,High,Low,Some concerns,NA,High
+Some concerns,Low,Some concerns,High,Low,High,NA,High
+Some concerns,Low,Some concerns,High,Some concerns,Low,NA,High
+Some concerns,Low,Some concerns,High,Some concerns,Some concerns,NA,High
+Some concerns,Low,Some concerns,High,Some concerns,High,NA,High
+Some concerns,Low,Some concerns,High,High,Low,NA,High
+Some concerns,Low,Some concerns,High,High,Some concerns,NA,High
+Some concerns,Low,Some concerns,High,High,High,NA,High
+Some concerns,Low,High,Low,Low,Low,NA,High
+Some concerns,Low,High,Low,Low,Some concerns,NA,High
+Some concerns,Low,High,Low,Low,High,NA,High
+Some concerns,Low,High,Low,Some concerns,Low,NA,High
+Some concerns,Low,High,Low,Some concerns,Some concerns,NA,High
+Some concerns,Low,High,Low,Some concerns,High,NA,High
+Some concerns,Low,High,Low,High,Low,NA,High
+Some concerns,Low,High,Low,High,Some concerns,NA,High
+Some concerns,Low,High,Low,High,High,NA,High
+Some concerns,Low,High,Some concerns,Low,Low,NA,High
+Some concerns,Low,High,Some concerns,Low,Some concerns,NA,High
+Some concerns,Low,High,Some concerns,Low,High,NA,High
+Some concerns,Low,High,Some concerns,Some concerns,Low,NA,High
+Some concerns,Low,High,Some concerns,Some concerns,Some concerns,NA,High
+Some concerns,Low,High,Some concerns,Some concerns,High,NA,High
+Some concerns,Low,High,Some concerns,High,Low,NA,High
+Some concerns,Low,High,Some concerns,High,Some concerns,NA,High
+Some concerns,Low,High,Some concerns,High,High,NA,High
+Some concerns,Low,High,High,Low,Low,NA,High
+Some concerns,Low,High,High,Low,Some concerns,NA,High
+Some concerns,Low,High,High,Low,High,NA,High
+Some concerns,Low,High,High,Some concerns,Low,NA,High
+Some concerns,Low,High,High,Some concerns,Some concerns,NA,High
+Some concerns,Low,High,High,Some concerns,High,NA,High
+Some concerns,Low,High,High,High,Low,NA,High
+Some concerns,Low,High,High,High,Some concerns,NA,High
+Some concerns,Low,High,High,High,High,NA,High
+Some concerns,Some concerns,Low,Low,Low,Low,Y,High
+Some concerns,Some concerns,Low,Low,Low,Low,PY,High
+Some concerns,Some concerns,Low,Low,Low,Low,PN,Some concerns
+Some concerns,Some concerns,Low,Low,Low,Low,N,Some concerns
+Some concerns,Some concerns,Low,Low,Low,Low,NI,Some concerns
+Some concerns,Some concerns,Low,Low,Low,Some concerns,Y,High
+Some concerns,Some concerns,Low,Low,Low,Some concerns,PY,High
+Some concerns,Some concerns,Low,Low,Low,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Low,Low,Low,Some concerns,N,Some concerns
+Some concerns,Some concerns,Low,Low,Low,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Low,Low,Low,High,NA,High
+Some concerns,Some concerns,Low,Low,Some concerns,Low,Y,High
+Some concerns,Some concerns,Low,Low,Some concerns,Low,PY,High
+Some concerns,Some concerns,Low,Low,Some concerns,Low,PN,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,Low,N,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,Low,NI,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,Some concerns,Y,High
+Some concerns,Some concerns,Low,Low,Some concerns,Some concerns,PY,High
+Some concerns,Some concerns,Low,Low,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,Some concerns,N,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Low,Low,Some concerns,High,NA,High
+Some concerns,Some concerns,Low,Low,High,Low,NA,High
+Some concerns,Some concerns,Low,Low,High,Some concerns,NA,High
+Some concerns,Some concerns,Low,Low,High,High,NA,High
+Some concerns,Some concerns,Low,Some concerns,Low,Low,Y,High
+Some concerns,Some concerns,Low,Some concerns,Low,Low,PY,High
+Some concerns,Some concerns,Low,Some concerns,Low,Low,PN,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,Low,N,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,Low,NI,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,Some concerns,Y,High
+Some concerns,Some concerns,Low,Some concerns,Low,Some concerns,PY,High
+Some concerns,Some concerns,Low,Some concerns,Low,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,Some concerns,N,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Low,High,NA,High
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Low,Y,High
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Low,PY,High
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Low,PN,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Low,N,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Low,NI,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Some concerns,Y,High
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Some concerns,PY,High
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Some concerns,N,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Low,Some concerns,Some concerns,High,NA,High
+Some concerns,Some concerns,Low,Some concerns,High,Low,NA,High
+Some concerns,Some concerns,Low,Some concerns,High,Some concerns,NA,High
+Some concerns,Some concerns,Low,Some concerns,High,High,NA,High
+Some concerns,Some concerns,Low,High,Low,Low,NA,High
+Some concerns,Some concerns,Low,High,Low,Some concerns,NA,High
+Some concerns,Some concerns,Low,High,Low,High,NA,High
+Some concerns,Some concerns,Low,High,Some concerns,Low,NA,High
+Some concerns,Some concerns,Low,High,Some concerns,Some concerns,NA,High
+Some concerns,Some concerns,Low,High,Some concerns,High,NA,High
+Some concerns,Some concerns,Low,High,High,Low,NA,High
+Some concerns,Some concerns,Low,High,High,Some concerns,NA,High
+Some concerns,Some concerns,Low,High,High,High,NA,High
+Some concerns,Some concerns,Some concerns,Low,Low,Low,Y,High
+Some concerns,Some concerns,Some concerns,Low,Low,Low,PY,High
+Some concerns,Some concerns,Some concerns,Low,Low,Low,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,Low,N,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,Low,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,Some concerns,Y,High
+Some concerns,Some concerns,Some concerns,Low,Low,Some concerns,PY,High
+Some concerns,Some concerns,Some concerns,Low,Low,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,Some concerns,N,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Low,High,NA,High
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Low,Y,High
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Low,PY,High
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Low,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Low,N,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Low,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Some concerns,Y,High
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Some concerns,PY,High
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Some concerns,N,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Low,Some concerns,High,NA,High
+Some concerns,Some concerns,Some concerns,Low,High,Low,NA,High
+Some concerns,Some concerns,Some concerns,Low,High,Some concerns,NA,High
+Some concerns,Some concerns,Some concerns,Low,High,High,NA,High
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Low,Y,High
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Low,PY,High
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Low,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Low,N,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Low,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Some concerns,Y,High
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Some concerns,PY,High
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Some concerns,N,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Low,High,NA,High
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Low,Y,High
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Low,PY,High
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Low,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Low,N,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Low,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Y,High
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,PY,High
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,PN,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,N,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,NI,Some concerns
+Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,High,NA,High
+Some concerns,Some concerns,Some concerns,Some concerns,High,Low,NA,High
+Some concerns,Some concerns,Some concerns,Some concerns,High,Some concerns,NA,High
+Some concerns,Some concerns,Some concerns,Some concerns,High,High,NA,High
+Some concerns,Some concerns,Some concerns,High,Low,Low,NA,High
+Some concerns,Some concerns,Some concerns,High,Low,Some concerns,NA,High
+Some concerns,Some concerns,Some concerns,High,Low,High,NA,High
+Some concerns,Some concerns,Some concerns,High,Some concerns,Low,NA,High
+Some concerns,Some concerns,Some concerns,High,Some concerns,Some concerns,NA,High
+Some concerns,Some concerns,Some concerns,High,Some concerns,High,NA,High
+Some concerns,Some concerns,Some concerns,High,High,Low,NA,High
+Some concerns,Some concerns,Some concerns,High,High,Some concerns,NA,High
+Some concerns,Some concerns,Some concerns,High,High,High,NA,High
+Some concerns,Some concerns,High,Low,Low,Low,NA,High
+Some concerns,Some concerns,High,Low,Low,Some concerns,NA,High
+Some concerns,Some concerns,High,Low,Low,High,NA,High
+Some concerns,Some concerns,High,Low,Some concerns,Low,NA,High
+Some concerns,Some concerns,High,Low,Some concerns,Some concerns,NA,High
+Some concerns,Some concerns,High,Low,Some concerns,High,NA,High
+Some concerns,Some concerns,High,Low,High,Low,NA,High
+Some concerns,Some concerns,High,Low,High,Some concerns,NA,High
+Some concerns,Some concerns,High,Low,High,High,NA,High
+Some concerns,Some concerns,High,Some concerns,Low,Low,NA,High
+Some concerns,Some concerns,High,Some concerns,Low,Some concerns,NA,High
+Some concerns,Some concerns,High,Some concerns,Low,High,NA,High
+Some concerns,Some concerns,High,Some concerns,Some concerns,Low,NA,High
+Some concerns,Some concerns,High,Some concerns,Some concerns,Some concerns,NA,High
+Some concerns,Some concerns,High,Some concerns,Some concerns,High,NA,High
+Some concerns,Some concerns,High,Some concerns,High,Low,NA,High
+Some concerns,Some concerns,High,Some concerns,High,Some concerns,NA,High
+Some concerns,Some concerns,High,Some concerns,High,High,NA,High
+Some concerns,Some concerns,High,High,Low,Low,NA,High
+Some concerns,Some concerns,High,High,Low,Some concerns,NA,High
+Some concerns,Some concerns,High,High,Low,High,NA,High
+Some concerns,Some concerns,High,High,Some concerns,Low,NA,High
+Some concerns,Some concerns,High,High,Some concerns,Some concerns,NA,High
+Some concerns,Some concerns,High,High,Some concerns,High,NA,High
+Some concerns,Some concerns,High,High,High,Low,NA,High
+Some concerns,Some concerns,High,High,High,Some concerns,NA,High
+Some concerns,Some concerns,High,High,High,High,NA,High
+Some concerns,High,Low,Low,Low,Low,NA,High
+Some concerns,High,Low,Low,Low,Some concerns,NA,High
+Some concerns,High,Low,Low,Low,High,NA,High
+Some concerns,High,Low,Low,Some concerns,Low,NA,High
+Some concerns,High,Low,Low,Some concerns,Some concerns,NA,High
+Some concerns,High,Low,Low,Some concerns,High,NA,High
+Some concerns,High,Low,Low,High,Low,NA,High
+Some concerns,High,Low,Low,High,Some concerns,NA,High
+Some concerns,High,Low,Low,High,High,NA,High
+Some concerns,High,Low,Some concerns,Low,Low,NA,High
+Some concerns,High,Low,Some concerns,Low,Some concerns,NA,High
+Some concerns,High,Low,Some concerns,Low,High,NA,High
+Some concerns,High,Low,Some concerns,Some concerns,Low,NA,High
+Some concerns,High,Low,Some concerns,Some concerns,Some concerns,NA,High
+Some concerns,High,Low,Some concerns,Some concerns,High,NA,High
+Some concerns,High,Low,Some concerns,High,Low,NA,High
+Some concerns,High,Low,Some concerns,High,Some concerns,NA,High
+Some concerns,High,Low,Some concerns,High,High,NA,High
+Some concerns,High,Low,High,Low,Low,NA,High
+Some concerns,High,Low,High,Low,Some concerns,NA,High
+Some concerns,High,Low,High,Low,High,NA,High
+Some concerns,High,Low,High,Some concerns,Low,NA,High
+Some concerns,High,Low,High,Some concerns,Some concerns,NA,High
+Some concerns,High,Low,High,Some concerns,High,NA,High
+Some concerns,High,Low,High,High,Low,NA,High
+Some concerns,High,Low,High,High,Some concerns,NA,High
+Some concerns,High,Low,High,High,High,NA,High
+Some concerns,High,Some concerns,Low,Low,Low,NA,High
+Some concerns,High,Some concerns,Low,Low,Some concerns,NA,High
+Some concerns,High,Some concerns,Low,Low,High,NA,High
+Some concerns,High,Some concerns,Low,Some concerns,Low,NA,High
+Some concerns,High,Some concerns,Low,Some concerns,Some concerns,NA,High
+Some concerns,High,Some concerns,Low,Some concerns,High,NA,High
+Some concerns,High,Some concerns,Low,High,Low,NA,High
+Some concerns,High,Some concerns,Low,High,Some concerns,NA,High
+Some concerns,High,Some concerns,Low,High,High,NA,High
+Some concerns,High,Some concerns,Some concerns,Low,Low,NA,High
+Some concerns,High,Some concerns,Some concerns,Low,Some concerns,NA,High
+Some concerns,High,Some concerns,Some concerns,Low,High,NA,High
+Some concerns,High,Some concerns,Some concerns,Some concerns,Low,NA,High
+Some concerns,High,Some concerns,Some concerns,Some concerns,Some concerns,NA,High
+Some concerns,High,Some concerns,Some concerns,Some concerns,High,NA,High
+Some concerns,High,Some concerns,Some concerns,High,Low,NA,High
+Some concerns,High,Some concerns,Some concerns,High,Some concerns,NA,High
+Some concerns,High,Some concerns,Some concerns,High,High,NA,High
+Some concerns,High,Some concerns,High,Low,Low,NA,High
+Some concerns,High,Some concerns,High,Low,Some concerns,NA,High
+Some concerns,High,Some concerns,High,Low,High,NA,High
+Some concerns,High,Some concerns,High,Some concerns,Low,NA,High
+Some concerns,High,Some concerns,High,Some concerns,Some concerns,NA,High
+Some concerns,High,Some concerns,High,Some concerns,High,NA,High
+Some concerns,High,Some concerns,High,High,Low,NA,High
+Some concerns,High,Some concerns,High,High,Some concerns,NA,High
+Some concerns,High,Some concerns,High,High,High,NA,High
+Some concerns,High,High,Low,Low,Low,NA,High
+Some concerns,High,High,Low,Low,Some concerns,NA,High
+Some concerns,High,High,Low,Low,High,NA,High
+Some concerns,High,High,Low,Some concerns,Low,NA,High
+Some concerns,High,High,Low,Some concerns,Some concerns,NA,High
+Some concerns,High,High,Low,Some concerns,High,NA,High
+Some concerns,High,High,Low,High,Low,NA,High
+Some concerns,High,High,Low,High,Some concerns,NA,High
+Some concerns,High,High,Low,High,High,NA,High
+Some concerns,High,High,Some concerns,Low,Low,NA,High
+Some concerns,High,High,Some concerns,Low,Some concerns,NA,High
+Some concerns,High,High,Some concerns,Low,High,NA,High
+Some concerns,High,High,Some concerns,Some concerns,Low,NA,High
+Some concerns,High,High,Some concerns,Some concerns,Some concerns,NA,High
+Some concerns,High,High,Some concerns,Some concerns,High,NA,High
+Some concerns,High,High,Some concerns,High,Low,NA,High
+Some concerns,High,High,Some concerns,High,Some concerns,NA,High
+Some concerns,High,High,Some concerns,High,High,NA,High
+Some concerns,High,High,High,Low,Low,NA,High
+Some concerns,High,High,High,Low,Some concerns,NA,High
+Some concerns,High,High,High,Low,High,NA,High
+Some concerns,High,High,High,Some concerns,Low,NA,High
+Some concerns,High,High,High,Some concerns,Some concerns,NA,High
+Some concerns,High,High,High,Some concerns,High,NA,High
+Some concerns,High,High,High,High,Low,NA,High
+Some concerns,High,High,High,High,Some concerns,NA,High
+Some concerns,High,High,High,High,High,NA,High
+High,Low,Low,Low,Low,Low,NA,High
+High,Low,Low,Low,Low,Some concerns,NA,High
+High,Low,Low,Low,Low,High,NA,High
+High,Low,Low,Low,Some concerns,Low,NA,High
+High,Low,Low,Low,Some concerns,Some concerns,NA,High
+High,Low,Low,Low,Some concerns,High,NA,High
+High,Low,Low,Low,High,Low,NA,High
+High,Low,Low,Low,High,Some concerns,NA,High
+High,Low,Low,Low,High,High,NA,High
+High,Low,Low,Some concerns,Low,Low,NA,High
+High,Low,Low,Some concerns,Low,Some concerns,NA,High
+High,Low,Low,Some concerns,Low,High,NA,High
+High,Low,Low,Some concerns,Some concerns,Low,NA,High
+High,Low,Low,Some concerns,Some concerns,Some concerns,NA,High
+High,Low,Low,Some concerns,Some concerns,High,NA,High
+High,Low,Low,Some concerns,High,Low,NA,High
+High,Low,Low,Some concerns,High,Some concerns,NA,High
+High,Low,Low,Some concerns,High,High,NA,High
+High,Low,Low,High,Low,Low,NA,High
+High,Low,Low,High,Low,Some concerns,NA,High
+High,Low,Low,High,Low,High,NA,High
+High,Low,Low,High,Some concerns,Low,NA,High
+High,Low,Low,High,Some concerns,Some concerns,NA,High
+High,Low,Low,High,Some concerns,High,NA,High
+High,Low,Low,High,High,Low,NA,High
+High,Low,Low,High,High,Some concerns,NA,High
+High,Low,Low,High,High,High,NA,High
+High,Low,Some concerns,Low,Low,Low,NA,High
+High,Low,Some concerns,Low,Low,Some concerns,NA,High
+High,Low,Some concerns,Low,Low,High,NA,High
+High,Low,Some concerns,Low,Some concerns,Low,NA,High
+High,Low,Some concerns,Low,Some concerns,Some concerns,NA,High
+High,Low,Some concerns,Low,Some concerns,High,NA,High
+High,Low,Some concerns,Low,High,Low,NA,High
+High,Low,Some concerns,Low,High,Some concerns,NA,High
+High,Low,Some concerns,Low,High,High,NA,High
+High,Low,Some concerns,Some concerns,Low,Low,NA,High
+High,Low,Some concerns,Some concerns,Low,Some concerns,NA,High
+High,Low,Some concerns,Some concerns,Low,High,NA,High
+High,Low,Some concerns,Some concerns,Some concerns,Low,NA,High
+High,Low,Some concerns,Some concerns,Some concerns,Some concerns,NA,High
+High,Low,Some concerns,Some concerns,Some concerns,High,NA,High
+High,Low,Some concerns,Some concerns,High,Low,NA,High
+High,Low,Some concerns,Some concerns,High,Some concerns,NA,High
+High,Low,Some concerns,Some concerns,High,High,NA,High
+High,Low,Some concerns,High,Low,Low,NA,High
+High,Low,Some concerns,High,Low,Some concerns,NA,High
+High,Low,Some concerns,High,Low,High,NA,High
+High,Low,Some concerns,High,Some concerns,Low,NA,High
+High,Low,Some concerns,High,Some concerns,Some concerns,NA,High
+High,Low,Some concerns,High,Some concerns,High,NA,High
+High,Low,Some concerns,High,High,Low,NA,High
+High,Low,Some concerns,High,High,Some concerns,NA,High
+High,Low,Some concerns,High,High,High,NA,High
+High,Low,High,Low,Low,Low,NA,High
+High,Low,High,Low,Low,Some concerns,NA,High
+High,Low,High,Low,Low,High,NA,High
+High,Low,High,Low,Some concerns,Low,NA,High
+High,Low,High,Low,Some concerns,Some concerns,NA,High
+High,Low,High,Low,Some concerns,High,NA,High
+High,Low,High,Low,High,Low,NA,High
+High,Low,High,Low,High,Some concerns,NA,High
+High,Low,High,Low,High,High,NA,High
+High,Low,High,Some concerns,Low,Low,NA,High
+High,Low,High,Some concerns,Low,Some concerns,NA,High
+High,Low,High,Some concerns,Low,High,NA,High
+High,Low,High,Some concerns,Some concerns,Low,NA,High
+High,Low,High,Some concerns,Some concerns,Some concerns,NA,High
+High,Low,High,Some concerns,Some concerns,High,NA,High
+High,Low,High,Some concerns,High,Low,NA,High
+High,Low,High,Some concerns,High,Some concerns,NA,High
+High,Low,High,Some concerns,High,High,NA,High
+High,Low,High,High,Low,Low,NA,High
+High,Low,High,High,Low,Some concerns,NA,High
+High,Low,High,High,Low,High,NA,High
+High,Low,High,High,Some concerns,Low,NA,High
+High,Low,High,High,Some concerns,Some concerns,NA,High
+High,Low,High,High,Some concerns,High,NA,High
+High,Low,High,High,High,Low,NA,High
+High,Low,High,High,High,Some concerns,NA,High
+High,Low,High,High,High,High,NA,High
+High,Some concerns,Low,Low,Low,Low,NA,High
+High,Some concerns,Low,Low,Low,Some concerns,NA,High
+High,Some concerns,Low,Low,Low,High,NA,High
+High,Some concerns,Low,Low,Some concerns,Low,NA,High
+High,Some concerns,Low,Low,Some concerns,Some concerns,NA,High
+High,Some concerns,Low,Low,Some concerns,High,NA,High
+High,Some concerns,Low,Low,High,Low,NA,High
+High,Some concerns,Low,Low,High,Some concerns,NA,High
+High,Some concerns,Low,Low,High,High,NA,High
+High,Some concerns,Low,Some concerns,Low,Low,NA,High
+High,Some concerns,Low,Some concerns,Low,Some concerns,NA,High
+High,Some concerns,Low,Some concerns,Low,High,NA,High
+High,Some concerns,Low,Some concerns,Some concerns,Low,NA,High
+High,Some concerns,Low,Some concerns,Some concerns,Some concerns,NA,High
+High,Some concerns,Low,Some concerns,Some concerns,High,NA,High
+High,Some concerns,Low,Some concerns,High,Low,NA,High
+High,Some concerns,Low,Some concerns,High,Some concerns,NA,High
+High,Some concerns,Low,Some concerns,High,High,NA,High
+High,Some concerns,Low,High,Low,Low,NA,High
+High,Some concerns,Low,High,Low,Some concerns,NA,High
+High,Some concerns,Low,High,Low,High,NA,High
+High,Some concerns,Low,High,Some concerns,Low,NA,High
+High,Some concerns,Low,High,Some concerns,Some concerns,NA,High
+High,Some concerns,Low,High,Some concerns,High,NA,High
+High,Some concerns,Low,High,High,Low,NA,High
+High,Some concerns,Low,High,High,Some concerns,NA,High
+High,Some concerns,Low,High,High,High,NA,High
+High,Some concerns,Some concerns,Low,Low,Low,NA,High
+High,Some concerns,Some concerns,Low,Low,Some concerns,NA,High
+High,Some concerns,Some concerns,Low,Low,High,NA,High
+High,Some concerns,Some concerns,Low,Some concerns,Low,NA,High
+High,Some concerns,Some concerns,Low,Some concerns,Some concerns,NA,High
+High,Some concerns,Some concerns,Low,Some concerns,High,NA,High
+High,Some concerns,Some concerns,Low,High,Low,NA,High
+High,Some concerns,Some concerns,Low,High,Some concerns,NA,High
+High,Some concerns,Some concerns,Low,High,High,NA,High
+High,Some concerns,Some concerns,Some concerns,Low,Low,NA,High
+High,Some concerns,Some concerns,Some concerns,Low,Some concerns,NA,High
+High,Some concerns,Some concerns,Some concerns,Low,High,NA,High
+High,Some concerns,Some concerns,Some concerns,Some concerns,Low,NA,High
+High,Some concerns,Some concerns,Some concerns,Some concerns,Some concerns,NA,High
+High,Some concerns,Some concerns,Some concerns,Some concerns,High,NA,High
+High,Some concerns,Some concerns,Some concerns,High,Low,NA,High
+High,Some concerns,Some concerns,Some concerns,High,Some concerns,NA,High
+High,Some concerns,Some concerns,Some concerns,High,High,NA,High
+High,Some concerns,Some concerns,High,Low,Low,NA,High
+High,Some concerns,Some concerns,High,Low,Some concerns,NA,High
+High,Some concerns,Some concerns,High,Low,High,NA,High
+High,Some concerns,Some concerns,High,Some concerns,Low,NA,High
+High,Some concerns,Some concerns,High,Some concerns,Some concerns,NA,High
+High,Some concerns,Some concerns,High,Some concerns,High,NA,High
+High,Some concerns,Some concerns,High,High,Low,NA,High
+High,Some concerns,Some concerns,High,High,Some concerns,NA,High
+High,Some concerns,Some concerns,High,High,High,NA,High
+High,Some concerns,High,Low,Low,Low,NA,High
+High,Some concerns,High,Low,Low,Some concerns,NA,High
+High,Some concerns,High,Low,Low,High,NA,High
+High,Some concerns,High,Low,Some concerns,Low,NA,High
+High,Some concerns,High,Low,Some concerns,Some concerns,NA,High
+High,Some concerns,High,Low,Some concerns,High,NA,High
+High,Some concerns,High,Low,High,Low,NA,High
+High,Some concerns,High,Low,High,Some concerns,NA,High
+High,Some concerns,High,Low,High,High,NA,High
+High,Some concerns,High,Some concerns,Low,Low,NA,High
+High,Some concerns,High,Some concerns,Low,Some concerns,NA,High
+High,Some concerns,High,Some concerns,Low,High,NA,High
+High,Some concerns,High,Some concerns,Some concerns,Low,NA,High
+High,Some concerns,High,Some concerns,Some concerns,Some concerns,NA,High
+High,Some concerns,High,Some concerns,Some concerns,High,NA,High
+High,Some concerns,High,Some concerns,High,Low,NA,High
+High,Some concerns,High,Some concerns,High,Some concerns,NA,High
+High,Some concerns,High,Some concerns,High,High,NA,High
+High,Some concerns,High,High,Low,Low,NA,High
+High,Some concerns,High,High,Low,Some concerns,NA,High
+High,Some concerns,High,High,Low,High,NA,High
+High,Some concerns,High,High,Some concerns,Low,NA,High
+High,Some concerns,High,High,Some concerns,Some concerns,NA,High
+High,Some concerns,High,High,Some concerns,High,NA,High
+High,Some concerns,High,High,High,Low,NA,High
+High,Some concerns,High,High,High,Some concerns,NA,High
+High,Some concerns,High,High,High,High,NA,High
+High,High,Low,Low,Low,Low,NA,High
+High,High,Low,Low,Low,Some concerns,NA,High
+High,High,Low,Low,Low,High,NA,High
+High,High,Low,Low,Some concerns,Low,NA,High
+High,High,Low,Low,Some concerns,Some concerns,NA,High
+High,High,Low,Low,Some concerns,High,NA,High
+High,High,Low,Low,High,Low,NA,High
+High,High,Low,Low,High,Some concerns,NA,High
+High,High,Low,Low,High,High,NA,High
+High,High,Low,Some concerns,Low,Low,NA,High
+High,High,Low,Some concerns,Low,Some concerns,NA,High
+High,High,Low,Some concerns,Low,High,NA,High
+High,High,Low,Some concerns,Some concerns,Low,NA,High
+High,High,Low,Some concerns,Some concerns,Some concerns,NA,High
+High,High,Low,Some concerns,Some concerns,High,NA,High
+High,High,Low,Some concerns,High,Low,NA,High
+High,High,Low,Some concerns,High,Some concerns,NA,High
+High,High,Low,Some concerns,High,High,NA,High
+High,High,Low,High,Low,Low,NA,High
+High,High,Low,High,Low,Some concerns,NA,High
+High,High,Low,High,Low,High,NA,High
+High,High,Low,High,Some concerns,Low,NA,High
+High,High,Low,High,Some concerns,Some concerns,NA,High
+High,High,Low,High,Some concerns,High,NA,High
+High,High,Low,High,High,Low,NA,High
+High,High,Low,High,High,Some concerns,NA,High
+High,High,Low,High,High,High,NA,High
+High,High,Some concerns,Low,Low,Low,NA,High
+High,High,Some concerns,Low,Low,Some concerns,NA,High
+High,High,Some concerns,Low,Low,High,NA,High
+High,High,Some concerns,Low,Some concerns,Low,NA,High
+High,High,Some concerns,Low,Some concerns,Some concerns,NA,High
+High,High,Some concerns,Low,Some concerns,High,NA,High
+High,High,Some concerns,Low,High,Low,NA,High
+High,High,Some concerns,Low,High,Some concerns,NA,High
+High,High,Some concerns,Low,High,High,NA,High
+High,High,Some concerns,Some concerns,Low,Low,NA,High
+High,High,Some concerns,Some concerns,Low,Some concerns,NA,High
+High,High,Some concerns,Some concerns,Low,High,NA,High
+High,High,Some concerns,Some concerns,Some concerns,Low,NA,High
+High,High,Some concerns,Some concerns,Some concerns,Some concerns,NA,High
+High,High,Some concerns,Some concerns,Some concerns,High,NA,High
+High,High,Some concerns,Some concerns,High,Low,NA,High
+High,High,Some concerns,Some concerns,High,Some concerns,NA,High
+High,High,Some concerns,Some concerns,High,High,NA,High
+High,High,Some concerns,High,Low,Low,NA,High
+High,High,Some concerns,High,Low,Some concerns,NA,High
+High,High,Some concerns,High,Low,High,NA,High
+High,High,Some concerns,High,Some concerns,Low,NA,High
+High,High,Some concerns,High,Some concerns,Some concerns,NA,High
+High,High,Some concerns,High,Some concerns,High,NA,High
+High,High,Some concerns,High,High,Low,NA,High
+High,High,Some concerns,High,High,Some concerns,NA,High
+High,High,Some concerns,High,High,High,NA,High
+High,High,High,Low,Low,Low,NA,High
+High,High,High,Low,Low,Some concerns,NA,High
+High,High,High,Low,Low,High,NA,High
+High,High,High,Low,Some concerns,Low,NA,High
+High,High,High,Low,Some concerns,Some concerns,NA,High
+High,High,High,Low,Some concerns,High,NA,High
+High,High,High,Low,High,Low,NA,High
+High,High,High,Low,High,Some concerns,NA,High
+High,High,High,Low,High,High,NA,High
+High,High,High,Some concerns,Low,Low,NA,High
+High,High,High,Some concerns,Low,Some concerns,NA,High
+High,High,High,Some concerns,Low,High,NA,High
+High,High,High,Some concerns,Some concerns,Low,NA,High
+High,High,High,Some concerns,Some concerns,Some concerns,NA,High
+High,High,High,Some concerns,Some concerns,High,NA,High
+High,High,High,Some concerns,High,Low,NA,High
+High,High,High,Some concerns,High,Some concerns,NA,High
+High,High,High,Some concerns,High,High,NA,High
+High,High,High,High,Low,Low,NA,High
+High,High,High,High,Low,Some concerns,NA,High
+High,High,High,High,Low,High,NA,High
+High,High,High,High,Some concerns,Low,NA,High
+High,High,High,High,Some concerns,Some concerns,NA,High
+High,High,High,High,Some concerns,High,NA,High
+High,High,High,High,High,Low,NA,High
+High,High,High,High,High,Some concerns,NA,High
+High,High,High,High,High,High,NA,High

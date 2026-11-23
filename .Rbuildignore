@@ -1,0 +1,11 @@
+^tools$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.github$
+^CITATION\.cff$
+^\.zenodo\.json$
+^cran-comments\.md$
+^RELEASING\.md$
+^doc$
+^Meta$
+^\.gitignore$

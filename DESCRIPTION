@@ -1,0 +1,35 @@
+Package: vitrob
+Type: Package
+Title: Risk-of-Bias Assessment of In Vitro Experiments with VITROB
+Version: 0.2.0
+Authors@R:
+    person("Ioannis", "Bellos", , "bellosg@windowslive.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5088-5458"))
+Description: Implements VITROB, a result-level, algorithm-based risk-of-bias
+    tool for in vitro experiments, modelled on RoB 2 and ROBINS-I V2. The
+    signalling questions, skip logic and judgment algorithms are read from a
+    single YAML specification. The package proposes domain and overall
+    judgments, checks assessment tables for entry errors, writes entry
+    templates, draws traffic-light, summary, answer-heatmap and
+    reporting-gap plots, provides a point-and-click app, and verifies the
+    algorithms exhaustively against an independent reference implementation.
+License: MIT + file LICENSE
+URL: https://github.com/bellosioan/vitrob
+BugReports: https://github.com/bellosioan/vitrob/issues
+Encoding: UTF-8
+Depends: R (>= 3.6.0)
+Imports:
+    ggplot2 (>= 3.4.0),
+    utils,
+    yaml
+Suggests:
+    knitr,
+    readxl,
+    rmarkdown,
+    shiny,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1

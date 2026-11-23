@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use VITROB or this software, please cite it as below."
+type: software
+title: "vitrob: Risk-of-Bias Assessment of In Vitro Experiments with VITROB"
+version: 0.2.0
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/bellosioan/vitrob"
+authors:
+  - family-names: "Bellos"
+    given-names: "Ioannis"
+    affiliation: "Department of Preventive Medicine, Epidemiology and Medical Statistics, School of Medicine, National and Kapodistrian University of Athens, Greece"
+    orcid: "https://orcid.org/0000-0001-5088-5458"
+    email: "bellosg@windowslive.com"
+keywords:
+  - risk of bias
+  - in vitro
+  - systematic review
+  - meta-analysis
+  - evidence synthesis
+  - R
+abstract: >-
+  R package implementing VITROB, a result-level, algorithm-based risk-of-bias
+  tool for in vitro experiments modelled on RoB 2 and ROBINS-I V2. It proposes
+  domain and overall judgments, checks assessments for entry errors, draws
+  traffic-light, summary, answer and reporting-gap plots, and includes a
+  point-and-click app.

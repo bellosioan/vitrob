@@ -1,0 +1,22 @@
+citHeader("To cite VITROB in publications, please cite the tool paper and,",
+          "when you used this package, the package version you used:")
+
+# Replace with the published tool paper when available.
+bibentry(
+  bibtype = "Misc",
+  key = "vitrob_tool",
+  title = "{VITROB}: a risk-of-bias tool for in vitro experiments",
+  author = c(person("Ioannis", "Bellos")),
+  year = "2026",
+  note = "Manuscript in preparation"
+)
+
+bibentry(
+  bibtype = "Manual",
+  key = "vitrob_package",
+  title = "{vitrob}: Risk-of-Bias Assessment of In Vitro Experiments with {VITROB}",
+  author = c(person("Ioannis", "Bellos")),
+  year = "2026",
+  note = paste("R package version", meta$Version),
+  url = "https://github.com/bellosioan/vitrob"
+)

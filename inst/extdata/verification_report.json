@@ -1,0 +1,115 @@
+{
+  "tool_version": "1.0.0-dev",
+  "domains": {
+    "D1": {
+      "profiles": 85,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 4,
+        "Some concerns": 29,
+        "High": 52
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 456,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    },
+    "D2": {
+      "profiles": 425,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 32,
+        "Some concerns": 163,
+        "High": 230
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 2960,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    },
+    "D3": {
+      "profiles": 2585,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 16,
+        "Some concerns": 947,
+        "High": 1622
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 21976,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    },
+    "D4": {
+      "profiles": 1325,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 32,
+        "Some concerns": 283,
+        "High": 1010
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 12440,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    },
+    "D5": {
+      "profiles": 2750,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 80,
+        "Some concerns": 586,
+        "High": 2084
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 30700,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    },
+    "D6": {
+      "profiles": 125,
+      "exclusive": true,
+      "skip_logic_consistent": true,
+      "counts": {
+        "Low": 8,
+        "Some concerns": 37,
+        "High": 80
+      },
+      "all_judgments_reachable": true,
+      "monotonic": true,
+      "monotonicity_comparisons": 600,
+      "dead_questions": [],
+      "no_dead_questions": true,
+      "passed": true,
+      "failures": []
+    }
+  },
+  "n_questions": 26,
+  "overall": {
+    "profiles": 957,
+    "never_below_worst_domain": true,
+    "monotonic": true,
+    "passed": true
+  },
+  "passed": true
+}
