@@ -3,6 +3,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/bellosioan/vitrob/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bellosioan/vitrob/actions/workflows/R-CMD-check.yaml)
 [![verify-spec](https://github.com/bellosioan/vitrob/actions/workflows/verify-spec.yaml/badge.svg)](https://github.com/bellosioan/vitrob/actions/workflows/verify-spec.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24474036.svg)](https://doi.org/10.5281/zenodo.24474036)
 <!-- badges: end -->
 
 R implementation of **VITROB**, a risk-of-bias tool for in vitro experiments
@@ -101,7 +102,8 @@ then in R: `devtools::document(); devtools::test(); devtools::check()`.
 ## Citation
 
 Please cite the tool paper and the package version you used:
-`citation("vitrob")`. Each release is archived on Zenodo with its own DOI.
+`citation("vitrob")`. Each release is archived on Zenodo with its own DOI;
+[10.5281/zenodo.24474036](https://doi.org/10.5281/zenodo.24474036) always points to the latest release.
 
 ## Licences
 

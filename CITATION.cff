@@ -5,6 +5,7 @@ title: "vitrob: Risk-of-Bias Assessment of In Vitro Experiments with VITROB"
 version: 0.2.0
 date-released: 2026-11-23
 license: MIT
+doi: "10.5281/zenodo.24474036"
 repository-code: "https://github.com/bellosioan/vitrob"
 authors:
   - family-names: "Bellos"
