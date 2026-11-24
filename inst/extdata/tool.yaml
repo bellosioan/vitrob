@@ -17,13 +17,18 @@
 tool:
   name: "VITROB: risk-of-bias tool for in vitro experiments"
   acronym: VITROB
-  version: 1.0.0-dev
-  date: 2026-11-23
+  version: 1.0.0-rc.4
+  date: 2026-11-24
   licence: CC-BY-4.0
   scope: >-
-    One specified result from an in vitro experiment comparing a condition
-    to which the investigator assigned a manipulation with a concurrent
-    comparator. Any in vitro system.
+    One specified quantitative result from an in vitro experiment comparing
+    a condition to which the investigator assigned a manipulation with a
+    concurrent comparator. The questions are generic; their application to
+    each class of in vitro system is examined in pilot testing. Not covered
+    in v1.0: comparisons whose only counterfactual is an earlier period of
+    the same units (uncontrolled before-after designs) and crossover designs,
+    which need questions on period and carry-over effects. Concurrent-group
+    experiments that analyse change from baseline are covered.
 
 response_options:
   "Y":  {label: "Yes", group: "yes"}
@@ -34,22 +39,34 @@ response_options:
 
 judgments: [Low, Some concerns, High]
 
+# Preliminary fields A-F, recorded for every result (template columns).
+result_fields:
+  - {id: A_target_outcome, field: A, required: true, label: "Target outcome (the quantity of interest)"}
+  - {id: A_measurement, field: A, required: true, label: "Operational measurement (assay and readout)"}
+  - {id: A_manipulation, field: A, required: true, label: "Manipulation"}
+  - {id: A_comparator, field: A, required: true, label: "Comparator"}
+  - {id: A_effect_measure, field: A, required: true, label: "Effect measure and its scale"}
+  - {id: C_effect_of_interest, field: C, required: true, options: ["Applying", "Target"], label: "Effect of interest: applying the manipulation, or a target-defined effect"}
+  - {id: D_allocation_unit, field: D, required: true, label: "Unit that received the manipulation (e.g. well, flask)"}
+  - {id: D_replicate, field: D, required: true, label: "Independent replicate or block (e.g. run, donor)"}
+  - {id: D_n_replicates, field: D, required: false, label: "Number of independent replicates per condition"}
+  - {id: D_biological_unit, field: D, required: false, label: "Biological unit of inference (e.g. cell line, donor)"}
+  - {id: D_observational_unit, field: D, required: false, label: "Observational unit (e.g. technical well, image, cell)"}
+  - {id: E_analysis, field: E, required: false, label: "Analysis as reported, or link to a reconstructed analysis"}
+  - {id: F_sources, field: F, required: false, label: "Sources used; funding and declared interests"}
+
 proceed_check:
   - id: B1
     text: Is there a concurrent comparator condition in the same experiment?
     stop_if: ["N", "PN"]
-    reason: Without one there is no internal comparison to assess.
+    reason: >-
+      Without one there is no internal comparison to assess. A baseline
+      period of the same units, or historical controls, is not a concurrent
+      comparator.
   - id: B2
-    text: Did the investigator assign the manipulation?
+    text: "Did the investigators decide which units received the manipulation (rather than comparing units that already differed, such as cells from patients and from healthy donors)?"
     stop_if: ["N", "PN"]
     reason: Comparisons of naturally different sources need different questions on confounding.
-  - id: B3
-    text: >-
-      Is the test system confirmed to be different from the one claimed
-      (e.g. a cell line listed as misidentified by ICLAC, with no authentication)?
-    stop_if: ["Y", "PY"]
-    reason: The result concerns a different system. Record under applicability.
-    references: [ICLAC2026, Horbach2017]
 
 domains:
   - id: D1
@@ -76,12 +93,18 @@ domains:
       - id: "1.2"
         short: Integrity problem likely
         text: >-
-          Is there a known or likely integrity problem that could change this
-          outcome or its response to the manipulation?
+          Is there a known or likely integrity problem that differs between
+          conditions in a way likely to distort this comparison?
         ask_if: 'no("1.1") | ni("1.1")'
         polarity: problem
-        y_when: A problem was found or is likely and plausibly affects this endpoint.
-        n_when: No evidence of a problem, or the problem cannot plausibly affect this endpoint.
+        y_when: >-
+          A problem found or likely that differs between conditions (e.g.
+          contamination of some flasks or conditions only) and is likely to
+          distort this comparison.
+        n_when: >-
+          No evidence of a problem, or a problem shared by all conditions. A
+          shared problem is routed by mechanism: reduced exposure to 3.1,
+          assay interference to 4.2, changed biology of the system to AP2.
         rationale: >-
           Separates absence of a check from the consequence of a problem, so a
           missing test alone cannot give High (process/consequence split as in
@@ -97,7 +120,9 @@ domains:
         polarity: problem
         y_when: >-
           Conditions seeded at different densities or times, taken from
-          different passages, or prepared differently.
+          different passages, or prepared differently, in a way likely to
+          affect the outcome importantly.
+        note: Unfavourable only when the problem is likely to distort the estimated effect importantly; NI when the problem exists but its likely impact cannot be determined.
         n_when: >-
           Units were split from common material at the same time, or state was
           checked and found comparable.
@@ -120,14 +145,24 @@ domains:
       - id: "2.1"
         short: Comparator matched
         text: >-
-          Did the comparator condition differ from the manipulated condition
-          only in the manipulation (same vehicle at the same concentration,
-          same handling and time in culture)?
+          Apart from the manipulation, was the comparator condition, as
+          planned, the same as the manipulated condition in every respect
+          likely to affect the estimated effect (vehicle at the same
+          concentration, planned handling and time in culture)?
         polarity: good
-        y_when: Vehicle or sham matched; handling and timing identical.
+        y_when: >-
+          Vehicle or sham matched; handling and timing identical; or any
+          remaining difference could not plausibly affect the outcome. For an
+          active comparator, the contrast defined in field A.
         n_when: >-
-          e.g. an untreated control for a compound dissolved in DMSO; different
-          exposure times.
+          A difference other than the manipulation that is likely to distort
+          the estimated effect importantly, e.g. an untreated control for a
+          compound dissolved in DMSO at a concentration known to affect this
+          outcome; different exposure times.
+        note: >-
+          Answer NI when a difference exists but its importance for this
+          outcome cannot be judged. 2.1 assesses the planned comparator;
+          unplanned departures during the experiment are assessed in 3.2.
         rationale: >-
           A mismatched comparator attributes vehicle or handling effects to the
           manipulation; 0.1% DMSO altered more than 2,000 genes in 3D microtissues.
@@ -154,15 +189,17 @@ domains:
         references: [Sterne2019, Hooijmans2014, DRIVER2026, Bebarta2003]
       - id: "2.3"
         short: Aligned with batch or position
-        text: >-
-          Was condition aligned with another factor that could affect the
-          outcome (plate position, run or day, operator, instrument, reagent
-          lot, source stock or donor)?
+        text: "Did the conditions coincide with another factor that could affect the outcome (plate position, run or day, operator, instrument, reagent lot, source stock or donor)?"
         polarity: problem
         y_when: >-
           e.g. all treated wells on outer rows; treated and control units run on
           different days or from different stocks.
-        n_when: Each run, plate or donor contains all conditions, or positions are balanced.
+        n_when: >-
+          Each run, plate or donor contains all conditions; positions are
+          balanced; or several runs, plates or donors were randomly assigned to
+          each condition and processed under a common protocol. When the run is
+          itself the unit randomly assigned, its identity is not an aligned
+          factor.
         rationale: >-
           Plate position, run and batch are the in vitro counterparts of
           SYRCLE's random-housing item; batch effects correlated with the
@@ -177,8 +214,13 @@ domains:
           within each run)?
         ask_if: 'yes("2.3") | ni("2.3")'
         polarity: good
-        y_when: Separation is built into the design or the analysis.
-        n_when: Factors cannot be separated, e.g. each run contains only one condition.
+        y_when: >-
+          Separation is built into the design (blocking, pairing, random
+          assignment of several runs or donors to each condition) or the
+          analysis (adjustment with sufficient overlap).
+        n_when: >-
+          Factors cannot be separated, e.g. all treated samples processed on
+          one day and all controls on another, or a single run per condition.
         rationale: >-
           Separates whether a factor travelled with condition from whether it
           was handled. Baseline significance tests do not count as separation.
@@ -197,8 +239,8 @@ domains:
         short: Delivered as specified
         text: >-
           Was the manipulation delivered as specified (identity and
-          preparation, concentration reaching the system, timing and duration)?
-          If the effect of interest is achieving a target (field C), was
+          preparation, concentration reaching the system, timing and duration)
+          and kept out of the comparator units? If the effect of interest is achieving a target (field C), was
           achievement shown?
         polarity: good
         y_when: >-
@@ -206,13 +248,16 @@ domains:
           addressed where relevant; target engagement measured when it defines
           the effect.
         n_when: >-
-          Evidence of failure: precipitation, degradation, loss to plastic,
-          insufficient knockdown.
+          Evidence of failure: precipitation, degradation (including by a
+          contaminant, e.g. mycoplasma enzymes inactivating gemcitabine), loss
+          to plastic, or transfer into comparator units (carry-over, vapour
+          transfer between wells). Insufficient knockdown or target engagement
+          counts only when field C specifies a target-defined effect.
         rationale: >-
           In vitro form of RoB 2's deviations from the intended intervention;
           delivery failure is common and invisible in the nominal dose.
         derived_from: v0.26 Q3.1
-        references: [Groothuis2015, Jackson2003, GIVIMP2025]
+        references: [Groothuis2015, Jackson2003, GIVIMP2025, VandeVoorde2014]
       - id: "3.2"
         short: Handled alike
         text: >-
@@ -220,19 +265,26 @@ domains:
           (incubation, medium changes, washes, time to measurement)?
         polarity: good
         y_when: Same procedures and timings.
-        n_when: Any condition handled differently.
+        n_when: Any condition handled differently from the planned procedure.
+        note: >-
+          Assesses unplanned departures during the experiment, up to harvest;
+          planned differences in the comparator are assessed in 2.1, and the
+          timing of reading after harvest in 4.2.
         rationale: Differential handling is performance bias; addressed by RoB 2 and SYRCLE.
         derived_from: v0.26 Q3.2
         references: [Sterne2019, Hooijmans2014, DRIVER2026]
       - id: "3.3"
         short: Decisions protected
         text: >-
-          Were procedural decisions that could depend on condition (repeating,
-          correcting or stopping a run; which cultures to carry forward) made by
-          pre-set rules or without knowledge of condition?
+          Were procedural decisions taken before the outcome was measured
+          (repeating, correcting or abandoning a run; which cultures to carry
+          forward) made by pre-set rules or without knowledge of condition?
         polarity: good
-        y_when: Rules fixed in advance, or decisions masked.
+        y_when: >-
+          Rules fixed in advance, decisions masked, or the report states the
+          number of runs performed and it matches the number analysed.
         n_when: Ad hoc decisions with knowledge of condition.
+        note: Answer NI when only the analysed runs are described.
         rationale: >-
           Investigators' expectations can steer discretionary steps. Indirect
           support: evidence concerns blind recording of data rather than
@@ -248,25 +300,32 @@ domains:
         polarity: good
         y_when: Checks done and passed, or none needed for a stated reason.
         n_when: A check failed and the result was still used.
-        note: Answer NI when checks are not reported.
+        note: >-
+          Answer NI when checks are not reported. A failed check leads to 3.5,
+          which judges its consequence.
         rationale: >-
           Acceptance criteria for controls show whether a run measured
           anything; SciRAP independently added a positive-control criterion.
         derived_from: v0.26 Q3.3p, Q3.3a, Q3.3b (merged)
         references: [Zhang1999, GIVIMP2025, Roth2021]
       - id: "3.5"
-        short: Deviation likely to matter
-        text: Were these deviations likely to have affected the result?
-        ask_if: 'no("3.1") | no("3.2") | no("3.3")'
+        short: Problem likely to matter
+        text: "Were the problems found in 3.1-3.4 likely to have affected the result?"
+        ask_if: 'no("3.1") | no("3.2") | no("3.3") | no("3.4")'
         polarity: problem
-        y_when: The deviation plausibly changes the outcome in one condition more than the other.
-        n_when: The deviation is unlikely to change the comparison.
-        rationale: Mirrors RoB 2 SQ 2.4; a deviation matters only if it is likely to change the result.
-        derived_from: v0.26 Q3.4 (limited to deviations)
+        y_when: >-
+          The problem is likely to have changed the estimate importantly, e.g.
+          by acting on one condition more than the other or by making the run
+          unable to show the effect.
+        n_when: The problem is unlikely to change the comparison.
+        rationale: >-
+          Mirrors RoB 2 SQ 2.4; a deviation or failed check matters only if it
+          is likely to change the result.
+        derived_from: v0.26 Q3.4 (extended to failed process checks in rc.2)
         references: [Sterne2019]
     rules:
       low: 'yes("3.1") & yes("3.2") & yes("3.3") & yes("3.4")'
-      high: 'no("3.4") | yes("3.5")'
+      high: 'yes("3.5")'
 
   - id: D4
     name: Risk of bias in measurement of the outcome
@@ -275,48 +334,46 @@ domains:
     questions:
       - id: "4.1"
         short: Method inappropriate
-        text: Was the method of measuring the outcome inappropriate for the outcome specified in field A?
+        text: "Was the outcome measured with a method unsuited to the target outcome defined in field A?"
         polarity: problem
         y_when: >-
           e.g. a metabolic assay used as a measure of cell number when the
           manipulation alters metabolism; a single static marker used for flux.
-        n_when: The method measures the specified outcome in this system.
+        n_when: The method measures the target outcome (construct) in this system.
+        note: Unfavourable only when the problem is likely to distort the estimated effect importantly; NI when the problem exists but its likely impact cannot be determined.
         rationale: Same as RoB 2 SQ 4.1; mismatch between readout and construct is a frequent in vitro error.
         derived_from: v0.26 Q4.1 (polarity reversed)
         references: [Sterne2019, Stepanenko2015, Klionsky2021, RissAGM]
       - id: "4.2"
         short: Measurement could differ
-        text: >-
-          Could measurement of the outcome have differed between conditions,
-          including through interference by the manipulation itself (colour,
-          autofluorescence, quenching, reaction with assay chemistry,
-          cytotoxicity masking a specific readout)?
+        text: "Is there evidence, or an established reason to expect, that the measurement differed between conditions enough to distort the estimated effect, including because the manipulation interferes with the assay (colour, autofluorescence, quenching, reaction with assay chemistry, cytotoxicity masking a specific readout)?"
         polarity: problem
         y_when: >-
           Different settings, timings, thresholds or reagent lots between
-          conditions; or interference that is documented, or known for this
+          conditions; a contaminant that produces or quenches signal; or
+          interference that is documented, or known for this
           compound-assay pair, and not controlled (e.g. by a cell-free or
           orthogonal control).
         n_when: >-
-          Identical procedures, and interference excluded or implausible.
-          Answer NI when interference is only a theoretical possibility.
+          Identical procedures, and interference excluded, implausible or too
+          small to matter. Answer NI when interference is only a theoretical
+          possibility or its size cannot be judged.
         rationale: Same as RoB 2 SQ 4.2, extended to interference by the manipulation.
         derived_from: v0.26 Q4.2 and Q4.3 (merged)
         references: [Sterne2019, BaellHolloway2010, Stepanenko2015, AGM]
       - id: "4.3"
         short: Assessors aware
-        text: Were outcome assessors aware of the condition of each unit?
+        text: "Did the people measuring or scoring the outcome know which condition each unit belonged to?"
         polarity: problem
-        y_when: Assessors knew the condition.
+        y_when: Assessors knew the condition, or awareness is evident from the design.
         n_when: Samples coded or masked.
+        note: Answer NI when masking is not reported and awareness cannot be inferred.
         rationale: Same as RoB 2 SQ 4.3.
         derived_from: v0.26 Q4.4
         references: [Sterne2019, Holman2015]
       - id: "4.4"
         short: Could be influenced
-        text: >-
-          Could assessment have been influenced by knowledge of condition
-          (choice of fields or cells, gating, thresholds, scoring, exclusion of images)?
+        text: "Did the measurement involve judgement steps that knowledge of condition could have influenced (choice of fields or cells, gating, thresholds, scoring, exclusion of images)?"
         ask_if: 'yes("4.3") | ni("4.3")'
         polarity: problem
         y_when: Discretionary steps exist.
@@ -326,7 +383,7 @@ domains:
         references: [Sterne2019, Holman2015]
       - id: "4.5"
         short: Likely influenced
-        text: Is it likely that assessment was influenced by knowledge of condition?
+        text: "Is it likely that knowledge of condition actually influenced those judgement steps?"
         ask_if: 'yes("4.4") | ni("4.4")'
         polarity: problem
         y_when: Discretion is substantial and the outcome is subjective, or there are signs of influence.
@@ -345,9 +402,7 @@ domains:
     questions:
       - id: "5.1"
         short: Data complete
-        text: >-
-          Were outcome data available for all, or nearly all, units assigned to
-          each condition, and for all planned observations within them?
+        text: "Do the analysed data include all, or nearly all, units assigned to each condition, and all planned observations within them?"
         polarity: good
         y_when: Assigned and analysed numbers can be reconciled at each level, with no relevant loss.
         n_when: Units or observations were lost or excluded.
@@ -356,7 +411,7 @@ domains:
         references: [Sterne2019]
       - id: "5.2"
         short: Evidence of no bias
-        text: Is there evidence that the result was not biased by missing data?
+        text: "Do the authors show that the missing data did not bias the result (for example, by a sensitivity analysis)?"
         ask_if: 'no("5.1") | ni("5.1")'
         options: ["Y", "PY", "PN", "N"]
         polarity: good
@@ -369,21 +424,27 @@ domains:
         references: [Sterne2019]
       - id: "5.3"
         short: Missingness could depend on value
-        text: Could missingness depend on the true value of the outcome?
+        text: "Could whether data went missing have depended on the value of the outcome itself?"
         ask_if: 'no("5.2")'
         polarity: problem
-        y_when: e.g. loss of detached dying cells, exclusion of low-signal wells, qPCR non-detects.
+        y_when: >-
+          e.g. loss of detached dying cells (including from a viability
+          measurement made only on retained cells), exclusion of low-signal
+          wells, qPCR non-detects.
         n_when: Loss clearly unrelated to the outcome, e.g. a documented equipment fault.
         rationale: Same as RoB 2 SQ 3.3; in vitro loss is often outcome-related by nature.
         derived_from: v0.26 Q5.3c
         references: [Sterne2019, McCall2014, MIQE2025]
       - id: "5.4"
         short: Missingness likely depended
-        text: Is it likely that missingness depended on the true value of the outcome?
+        text: "Is it likely that whether data went missing depended on the value of the outcome?"
         ask_if: 'yes("5.3") | ni("5.3")'
         polarity: problem
-        y_when: Loss differs between conditions, or its reasons point to the outcome.
-        n_when: Loss is small and balanced, with no link to the outcome.
+        y_when: >-
+          The reasons for loss point to the outcome, or loss differs between
+          conditions in a way plausibly linked to the outcome. Balanced amounts
+          of loss do not exclude outcome-dependent loss.
+        n_when: Reasons unrelated to the outcome, or loss too small to change the estimate.
         rationale: Same as RoB 2 SQ 3.4.
         derived_from: v0.26 Q5.4 (limited to missing data)
         references: [Sterne2019]
@@ -394,11 +455,17 @@ domains:
           and applied identically to all conditions?
         polarity: good
         y_when: >-
-          Reference not affected by the manipulation; background, thresholds
-          and transformations handled alike.
+          Reference not affected by the manipulation, or the effect of interest
+          is defined relative to it (field A); background, thresholds and
+          transformations handled alike.
         n_when: >-
-          e.g. a reference gene or protein changed by the manipulation;
-          background subtracted differently between conditions.
+          e.g. a reference gene or protein changed by the manipulation when the
+          effect of interest is not defined relative to it; normalising to cell
+          number or another quantity changed by the manipulation when the effect
+          of interest is not defined per that quantity; adjustment for a
+          variable changed by the manipulation; background subtracted
+          differently between conditions.
+        note: Unfavourable only when the problem is likely to distort the estimated effect importantly; NI when the problem exists but its likely impact cannot be determined.
         rationale: >-
           Normalisation and processing can change the point estimate itself;
           reference genes and proteins must be stable under the manipulation.
@@ -407,14 +474,20 @@ domains:
       - id: "5.6"
         short: Units weighted as intended
         text: >-
-          Was the effect estimate calculated so that experimental units are
-          weighted as intended (e.g. values summarised within each unit before
-          conditions are compared)?
+          Was the effect estimate calculated so that independent replicates
+          are weighted as intended (e.g. values summarised within each replicate
+          before conditions are compared)?
         polarity: good
-        y_when: Estimate built from experimental-unit values, or any other weighting justified.
+        y_when: >-
+          Estimate built from independent-replicate values (field D), from a
+          model that accounts for the replicate structure (e.g. a mixed model
+          with run as a random effect), or any other weighting justified.
+        note: Unfavourable only when the problem is likely to distort the estimated effect importantly; NI when the problem exists but its likely impact cannot be determined.
         n_when: >-
-          e.g. all wells pooled across runs with unequal replication, so some
-          runs or donors dominate the estimate.
+          e.g. wells pooled across runs with markedly unequal replication, or
+          raw values pooled across runs before normalisation, so that some runs
+          or donors dominate the estimate and the runs differ in level or
+          response.
         rationale: >-
           Pooling observations with unequal replication reweights experimental
           units and can shift the point estimate. Errors that affect only the
@@ -432,13 +505,13 @@ domains:
     questions:
       - id: "6.1"
         short: Pre-specified plan
-        text: >-
-          Were the data analysed in accordance with a plan (protocol,
-          registration, registered report, or a dated laboratory SOP that fixes
-          this outcome's measurement and analysis) that was finalised before
-          unmasked outcome data were available?
+        text: "Were the measurement and analysis of this result fixed independently of knowledge of the results, as shown by a plan fixed before the outcome data were seen unmasked (protocol, registration, registered report, or a dated laboratory SOP that fixes this outcome's measurement and analysis) or, exceptionally, by an established procedure that leaves no realistic choice?"
         polarity: good
-        y_when: A dated plan exists and was followed for this result.
+        y_when: >-
+          A dated plan exists and was followed for this result; PY when an
+          established procedure (e.g. a test guideline) fixes the time point,
+          exclusions, normalisation and analysis, so that no credible
+          alternative exists for any of them.
         n_when: No plan, or the plan was changed after results were seen.
         rationale: >-
           Same as RoB 2 SQ 5.1. A missing plan alone gives Some concerns, never
@@ -447,25 +520,28 @@ domains:
         references: [Sterne2019]
       - id: "6.2"
         short: Selected measurement
-        text: >-
-          Is the result likely to have been selected, on the basis of the
-          results, from multiple eligible outcome measurements (time points,
-          concentrations, markers, assays, fields or blots, or one
-          "representative" experiment among several)?
+        text: "Is it likely that the reported result was chosen, because of what it showed, from several eligible outcome measurements (time points, concentrations, markers, assays, fields or blots, or one \"representative\" experiment among several)?"
         polarity: problem
-        y_when: Several eligible measurements existed and only a favourable one is reported.
+        y_when: >-
+          Evidence that eligible measurements existed and only a favourable one
+          is reported, e.g. time points listed in the methods but not reported.
         n_when: All eligible measurements are reported, or only one existed.
         rationale: Same as RoB 2 SQ 5.2, with in vitro forms of multiplicity listed.
         derived_from: v0.26 Q6.1
         references: [Sterne2019, Head2015, Errington2021]
       - id: "6.3"
         short: Selected analysis
-        text: >-
-          Is the result likely to have been selected, on the basis of the
-          results, from multiple eligible analyses of the data (normalisations,
-          exclusion rules, transformations, statistical models, subsets of runs)?
+        text: "Is it likely that the reported result was chosen, because of what it showed, from several eligible analyses of the data (normalisations, exclusion rules, transformations, statistical models, summary measures, or when to stop adding runs)?"
         polarity: problem
-        y_when: Several analyses were possible and the choice appears to follow the result.
+        y_when: >-
+          Evidence that the reported analysis was chosen because of its result,
+          e.g. different normalisations of one outcome in different figures
+          without a reason, or runs added until significance. The existence of
+          alternatives alone is not enough.
+        note: >-
+          Bias from data missing from the chosen estimate is assessed in D5;
+          the choice of an exclusion rule among alternatives because of its
+          result is assessed here.
         n_when: Analysis fixed in advance, or all reasonable analyses agree and are reported.
         rationale: Same as RoB 2 SQ 5.3.
         derived_from: v0.26 Q6.2
@@ -490,28 +566,37 @@ additional_outputs:
   - id: U1
     text: >-
       Were the reported standard error, confidence interval or P value
-      calculated with the experimental unit recorded in field D, rather than
-      treating technical replicates or repeated observations as independent?
-    outputs: {"Y": valid, "PY": valid, "PN": invalid, "N": invalid, "NI": unclear}
+      calculated with the independent replicate recorded in field D, rather
+      than treating technical replicates or repeated observations as
+      independent?
+    outputs: {"Y": "unit respected", "PY": "unit respected", "PN": "unit not respected", "N": "unit not respected", "NI": unclear}
     references: [Lazic2010, Lazic2018, DRIVER2026]
   - id: AP1
     text: >-
       Was the identity of the test system verified by a method suited to it,
       and is it absent from the ICLAC register of misidentified cell lines?
     outputs: [Verified, Not verified, Listed as misidentified]
+    components:
+      authentication: [Confirms declared identity, Does not confirm, Not reported]
+      register: [Listed, Not listed, Not applicable]
+    derivation: >-
+      Listed as misidentified if the register lists the line and
+      authentication does not confirm the declared identity; Verified if
+      authentication confirms the declared identity; otherwise Not verified.
     references: [CapesDavis2010, ICLAC2026, Horbach2017, GCCP2022]
   - id: AP2
     text: >-
       Applicability to the review question (system, manipulation, comparator,
       outcome). Covers applicability only; generalisability is outside the tool.
     outputs: [Direct, Limited, Uncertain]
+    components: [system, manipulation, comparator, outcome]
     references: [Whiting2011, Whaley2026]
 
 # Keys used above. `checked: false` = cited from memory, verify before submission.
 references:
-  AGM: {citation: "Assay Guidance Manual. NCATS. https://www.ncbi.nlm.nih.gov/books/NBK53196/", checked: false}
-  BaellHolloway2010: {citation: "Baell JB, Holloway GA. J Med Chem 2010;53:2719-2740.", checked: false}
-  Bebarta2003: {citation: "Bebarta V, Luyten D, Heard K. Acad Emerg Med 2003;10:684-687. PMID 12782533", checked: false}
+  AGM: {citation: "Markossian S, Grossman A, Baskir H, et al., editors. Assay Guidance Manual [Internet]. Bethesda (MD): Eli Lilly & Company and the National Center for Advancing Translational Sciences; 2004-. https://www.ncbi.nlm.nih.gov/books/NBK53196/", checked: true}
+  BaellHolloway2010: {citation: "Baell JB, Holloway GA. New substructure filters for removal of pan assay interference compounds (PAINS) from screening libraries and for their exclusion in bioassays. J Med Chem 2010;53(7):2719-2740. doi:10.1021/jm901137j", checked: true}
+  Bebarta2003: {citation: "Bebarta V, Luyten D, Heard K. Emergency medicine animal research: does use of randomization and blinding affect the results? Acad Emerg Med 2003;10(6):684-687. PMID 12782533", checked: true}
   BenDavid2018: {citation: "Ben-David U, et al. Nature 2018;560:325-330.", checked: true}
   CapesDavis2010: {citation: "Capes-Davis A, et al. Int J Cancer 2010;127:1-8.", checked: true}
   deBoer2015: {citation: "de Boer MR, et al. Int J Behav Nutr Phys Act 2015;12:4.", checked: true}
@@ -528,21 +613,22 @@ references:
   Horbach2017: {citation: "Horbach SPJM, Halffman W. PLoS One 2017;12:e0186281.", checked: true}
   ICLAC2026: {citation: "ICLAC. Register of Misidentified Cell Lines, version 14, 15 Feb 2026.", checked: true}
   Jackson2003: {citation: "Jackson AL, et al. Nat Biotechnol 2003;21:635-637.", checked: true}
-  Klionsky2021: {citation: "Klionsky DJ, et al. Autophagy 2021;17:1-382.", checked: false}
+  Klionsky2021: {citation: "Klionsky DJ, et al. Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition). Autophagy 2021;17(1):1-382. doi:10.1080/15548627.2020.1797280", checked: true}
   Lazic2010: {citation: "Lazic SE. BMC Neurosci 2010;11:5.", checked: true}
-  Lazic2018: {citation: "Lazic SE, Clarke-Williams CJ, Munafo MR. PLoS Biol 2018;16:e2005282.", checked: false}
+  Lazic2018: {citation: "Lazic SE, Clarke-Williams CJ, Munafo MR. What exactly is 'N' in cell culture and animal experiments? PLoS Biol 2018;16(4):e2005282. doi:10.1371/journal.pbio.2005282", checked: true}
   Leek2010: {citation: "Leek JT, et al. Nat Rev Genet 2010;11:733-739.", checked: true}
   Lundholt2003: {citation: "Lundholt BK, Scudder KM, Pagliaro L. J Biomol Screen 2003;8:566-570.", checked: true}
   McCall2014: {citation: "McCall MN, et al. Bioinformatics 2014;30:2310-2316.", checked: true}
   MIQE2025: {citation: "Bustin SA, et al. MIQE 2.0. Clin Chem 2025;71(6):634-651.", checked: true}
   OlarerinGeorge2015: {citation: "Olarerin-George AO, Hogenesch JB. Nucleic Acids Res 2015;43:2535-2542.", checked: true}
-  RissAGM: {citation: "Riss TL, et al. Cell viability assays. Assay Guidance Manual. https://www.ncbi.nlm.nih.gov/books/NBK144065/", checked: false}
+  RissAGM: {citation: "Riss TL, Moravec RA, Niles AL, et al. Cell viability assays. 2013 [updated 2016]. In: Markossian S, et al., editors. Assay Guidance Manual [Internet]. Bethesda (MD): Eli Lilly & Company and NCATS; 2004-. https://www.ncbi.nlm.nih.gov/books/NBK144065/", checked: true}
   Roth2021: {citation: "Roth N, Zilliacus J, Beronius A. Front Toxicol 2021;3:746430.", checked: true}
-  Simmons2011: {citation: "Simmons JP, Nelson LD, Simonsohn U. Psychol Sci 2011;22:1359-1366.", checked: false}
+  Simmons2011: {citation: "Simmons JP, Nelson LD, Simonsohn U. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychol Sci 2011;22(11):1359-1366. doi:10.1177/0956797611417632", checked: true}
   Stepanenko2015: {citation: "Stepanenko AA, Dmitrenko VV. Gene 2015;574:193-203.", checked: true}
-  Sterne2019: {citation: "Sterne JAC, et al. RoB 2. BMJ 2019;366:l4898.", checked: false}
+  Sterne2019: {citation: "Sterne JAC, Savovic J, Page MJ, et al. RoB 2: a revised tool for assessing risk of bias in randomised trials. BMJ 2019;366:l4898. doi:10.1136/bmj.l4898", checked: true}
+  VandeVoorde2014: {citation: "Vande Voorde J, Sabuncuoglu S, Noppen S, et al. Nucleoside-catabolizing enzymes in mycoplasma-infected tumor cell cultures compromise the cytostatic activity of the anticancer drug gemcitabine. J Biol Chem 2014;289(19):13054-13065. doi:10.1074/jbc.M114.558924", checked: true}
   Vandesompele2002: {citation: "Vandesompele J, et al. Genome Biol 2002;3:research0034.", checked: true}
   Verheijen2019: {citation: "Verheijen M, et al. Sci Rep 2019;9:4641.", checked: true}
   Whaley2026: {citation: "Whaley P, et al. Regul Toxicol Pharmacol 2026;171:106185.", checked: true}
-  Whiting2011: {citation: "Whiting PF, et al. QUADAS-2. Ann Intern Med 2011;155:529-536.", checked: false}
-  Zhang1999: {citation: "Zhang JH, Chung TDY, Oldenburg KR. J Biomol Screen 1999;4:67-73.", checked: false}
+  Whiting2011: {citation: "Whiting PF, Rutjes AWS, Westwood ME, et al. QUADAS-2: a revised tool for the quality assessment of diagnostic accuracy studies. Ann Intern Med 2011;155(8):529-536. doi:10.7326/0003-4819-155-8-201110180-00009", checked: true}
+  Zhang1999: {citation: "Zhang JH, Chung TDY, Oldenburg KR. A simple statistical parameter for use in evaluation and validation of high throughput screening assays. J Biomol Screen 1999;4:67-73", checked: true}

@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Keep reference files byte-identical on every platform (checked against
+# release_manifest.csv by the tests).
+inst/extdata/* -text

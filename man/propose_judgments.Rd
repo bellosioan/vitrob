@@ -15,8 +15,9 @@ propose_judgments(data, spec = tool_spec())
 \code{data} with proposed-judgment columns added.
 }
 \description{
-For each row, adds \verb{<D>_proposed} for every domain and
-\code{overall_proposed}. The overall proposal uses the assessor's final domain
+For each row, adds \code{scope_status} (\code{eligible}, \code{unresolved} when B1 or
+B2 is NI, or \code{stopped}), \verb{<D>_proposed} for every domain,
+\code{overall_proposed}, and \code{AP1_proposed} derived from the AP1 components. The overall proposal uses the assessor's final domain
 judgments where given, otherwise the proposed ones. Rows stopped at the
-proceed check get \code{NA}.
+proceed check, and rows with an invalid O1 code, get \code{NA}.
 }

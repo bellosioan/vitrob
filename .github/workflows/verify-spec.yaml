@@ -22,5 +22,7 @@ jobs:
       - run: pip install pyyaml
       - name: Verify algorithms
         run: python tools/verify_algorithms.py
+      - name: Calibration scenarios match tool.yaml
+        run: python tools/make_calibration.py
       - name: Reference files match tool.yaml
         run: git diff --exit-code -- inst/extdata

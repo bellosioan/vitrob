@@ -13,7 +13,10 @@ test_that("domain judgments match the independent Python reference for every ans
   }, character(1))
   mismatch <- which(got != ref$proposed)
   expect_length(mismatch, 0)
-  expect_equal(nrow(ref), 7295L)
+  # Expected count comes from the verifier's own summary, not a hard-coded number.
+  summ <- utils::read.csv(ref_file("verification_summary.csv"), check.names = FALSE)
+  expect_equal(nrow(ref), sum(summ$profiles))
+  expect_setequal(unique(ref$domain), domain_ids(spec))
 })
 
 test_that("overall judgments match the reference for every domain-judgment profile", {

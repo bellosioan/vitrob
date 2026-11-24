@@ -34,6 +34,9 @@ def main():
     cols = []  # (name, options or None, comment)
     cols += [("study_id", None, "Study identifier"), ("result_id", None, "Figure/panel/table"),
              ("assessor", None, None), ("module", None, "System module")]
+    for f in spec.get("result_fields", []):
+        req = "Required. " if f.get("required") else ""
+        cols.append((f["id"], f.get("options"), f"Field {f['field']}. {req}{f['label']}"))
     for b in spec["proceed_check"]:
         cols.append((b["id"], DEFAULT, b["text"].strip()))
     for d in spec["domains"]:
@@ -50,8 +53,11 @@ def main():
     cols.append(("overall_final", JUDG, "Final overall judgment"))
     cols.append(("overall_reason", None, "Reason if the overall judgment differs from the proposal"))
     cols.append(("U1", DEFAULT, ap["U1"]["text"].strip()))
-    cols.append(("AP1", ap["AP1"]["outputs"], ap["AP1"]["text"].strip()))
-    cols.append(("AP2", ap["AP2"]["outputs"], ap["AP2"]["text"].strip()))
+    for comp, opts in ap["AP1"]["components"].items():
+        cols.append((f"AP1_{comp}", opts, f"AP1, {comp}. " + ap["AP1"]["text"].strip()))
+    cols.append(("AP1", ap["AP1"]["outputs"], "Final AP1 output. " + ap["AP1"]["derivation"].strip()))
+    for comp in ap["AP2"]["components"]:
+        cols.append((f"AP2_{comp}", ap["AP2"]["outputs"], f"AP2, {comp}: " + ap["AP2"]["text"].strip()))
     cols.append(("notes", None, None))
 
     wb = Workbook()
@@ -110,7 +116,7 @@ def main():
         spec["tool"]["name"] + ", version " + str(spec["tool"]["version"]),
         "",
         "1. One row per assessed result. Record the review-level planning decisions (P1) separately.",
-        "2. Answer the proceed check (B1-B3). If it stops the assessment, leave the domain questions blank.",
+        "2. Answer the proceed check (B1-B2). If it stops the assessment, leave the domain questions blank.",
         "3. Answer each signalling question from the drop-down list. Leave a question blank when its 'Asked if' condition is not met (see the header comment or the Questions sheet).",
         "4. Leave the *_final columns blank to accept the proposed judgment; if you enter a different judgment, give a reason.",
         "5. Answer O1 only when two or more domains are Some concerns and none is High.",

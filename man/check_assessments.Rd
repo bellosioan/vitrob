@@ -16,8 +16,9 @@ A data frame of issues (\code{row}, \code{study_id}, \code{result_id}, \code{fie
 \code{problem}); zero rows when nothing is wrong.
 }
 \description{
-Flags invalid answer codes, missing required answers, answers given to
-questions that should have been skipped, O1 answered or missing
-wrongly, invalid judgments, overrides without a reason, and overall
-judgments lower than the worst domain judgment.
+Flags missing required preliminary fields (A-F), invalid answer codes,
+missing required answers, answers given to questions that should have
+been skipped, O1 answered or missing wrongly or with an invalid code,
+invalid U1, AP1 and AP2 entries, invalid judgments, overrides without a
+reason, and overall judgments lower than the worst domain judgment.
 }

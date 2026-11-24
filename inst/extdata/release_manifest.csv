@@ -1,0 +1,12 @@
+item,value
+tool_version,1.0.0-rc.4
+package_version,0.3.0
+guidance_version,"VITROB 1.0 guidance, release candidate 4"
+md5:tool.yaml,aaecb3786986441a3324f2ca379f8289
+md5:assessment_template.xlsx,5769ae87b4cb399d374ea1d49fbcedc8
+md5:example_assessments.csv,acd87b11978deb6bc15ad93797817cd0
+md5:reference_judgments.csv,c7df9e4c2c232abc9203e9997fe4a212
+md5:reference_overall.csv,b5cc67ff454b2bb6b30f0e58ed2e7587
+md5:verification_summary.csv,5df67f76154f4987ae0dfe4dc0edb5e8
+md5:verification_report.json,3c183fd8a6cc5e1ab0548ce9408bbf72
+md5:calibration_scenarios.csv,2465af4c3bdfaa434322249928e25b8a

@@ -13,8 +13,14 @@ assessment_columns(spec = tool_spec())
 Character vector of column names.
 }
 \description{
-One row per assessed result. Signalling questions are columns named
-\verb{q<id>} (e.g. \code{q1.1}). Each domain has \verb{<D>_final} and \verb{<D>_reason}
-columns for the assessor's final judgment and the reason for any
-override; the proposed judgments are added by \code{\link[=propose_judgments]{propose_judgments()}}.
+One row per assessed result. The preliminary fields A-F come first
+(e.g. \code{A_target_outcome}, \code{D_replicate}; see \code{result_fields} in
+tool.yaml). Signalling questions are columns named \verb{q<id>} (e.g. \code{q1.1}).
+Each domain has \verb{<D>_final} and \verb{<D>_reason} columns for the assessor's
+final judgment and the reason for any override; the proposed judgments
+are added by \code{\link[=propose_judgments]{propose_judgments()}}. AP1 is recorded as two components
+(\code{AP1_authentication}, \code{AP1_register}) from which \code{AP1_proposed} is
+derived; \code{AP1} holds the assessor's final output. AP2 has one column per
+component (\code{AP2_system}, \code{AP2_manipulation}, \code{AP2_comparator},
+\code{AP2_outcome}).
 }

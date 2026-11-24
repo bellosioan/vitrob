@@ -1,5 +1,5 @@
 {
-  "tool_version": "1.0.0-dev",
+  "tool_version": "1.0.0-rc.4",
   "domains": {
     "D1": {
       "profiles": 85,
@@ -36,17 +36,17 @@
       "failures": []
     },
     "D3": {
-      "profiles": 2585,
+      "profiles": 2801,
       "exclusive": true,
       "skip_logic_consistent": true,
       "counts": {
         "Low": 16,
-        "Some concerns": 947,
-        "High": 1622
+        "Some concerns": 1697,
+        "High": 1088
       },
       "all_judgments_reachable": true,
       "monotonic": true,
-      "monotonicity_comparisons": 21976,
+      "monotonicity_comparisons": 23488,
       "dead_questions": [],
       "no_dead_questions": true,
       "passed": true,

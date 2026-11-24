@@ -1,4 +1,4 @@
-# Algorithm verification, tool version 1.0.0-dev
+# Algorithm verification, tool version 1.0.0-rc.4
 
 Overall result: **PASSED**. 26 signalling questions in 6 domains.
 
@@ -6,7 +6,7 @@ Overall result: **PASSED**. 26 signalling questions in 6 domains.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | D1 | 85 | 4 | 29 | 52 | yes | yes | yes | yes (456) | none |
 | D2 | 425 | 32 | 163 | 230 | yes | yes | yes | yes (2960) | none |
-| D3 | 2585 | 16 | 947 | 1622 | yes | yes | yes | yes (21976) | none |
+| D3 | 2801 | 16 | 1697 | 1088 | yes | yes | yes | yes (23488) | none |
 | D4 | 1325 | 32 | 283 | 1010 | yes | yes | yes | yes (12440) | none |
 | D5 | 2750 | 80 | 586 | 2084 | yes | yes | yes | yes (30700) | none |
 | D6 | 125 | 8 | 37 | 80 | yes | yes | yes | yes (600) | none |

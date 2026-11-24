@@ -86,7 +86,7 @@ server <- function(input, output, session) {
   output$judgments <- renderTable({
     p <- proposed()
     ids <- domain_ids(spec)
-    cols <- c("study_id", "result_id", paste0(ids, "_proposed"), paste0(ids, "_final"),
+    cols <- c("study_id", "result_id", "scope_status", paste0(ids, "_proposed"), paste0(ids, "_final"),
               "O1", "overall_proposed", "overall_final")
     p[, intersect(cols, names(p)), drop = FALSE]
   })

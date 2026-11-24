@@ -1,0 +1,14 @@
+scenario,description,domain,expected,q1.1,q1.2,q1.3,q2.1,q2.2,q2.3,q2.4,q3.1,q3.2,q3.3,q3.4,q3.5,q4.1,q4.2,q4.3,q4.4,q4.5,q5.1,q5.2,q5.3,q5.4,q5.5,q5.6,q6.1,q6.2,q6.3
+C1a,"Ten runs randomly assigned to each condition, common protocol, analysis by run",D2,Low,,,,Y,Y,N,,,,,,,,,,,,,,,,,,,,
+C1b,"One run per condition; treated on one day, controls on another",D2,High,,,,Y,Y,Y,N,,,,,,,,,,,,,,,,,,,
+C2a,"Valid planned comparator; unplanned extra wash in treated wells, stable endpoint",D3,Some concerns,,,,,,,,Y,N,PY,Y,N,,,,,,,,,,,,,,
+C2b,"As C2a, but the extra wash removes the analyte being measured",D3,High,,,,,,,,Y,N,PY,Y,Y,,,,,,,,,,,,,,
+C3a,Mycoplasma detected in all cultures after the experiment; not linked to condition,D1,Some concerns,N,N,N,,,,,,,,,,,,,,,,,,,,,,,
+C3b,Same contaminant inactivates the test compound in all conditions,D3,High,,,,,,,,N,Y,PY,Y,Y,,,,,,,,,,,,,,
+C4,Incomplete knockdown; effect of interest is applying the reagent (field C),D3,Low,,,,,,,,PY,Y,PY,Y,,,,,,,,,,,,,,,
+C5a,Minor starting-state difference of unknown importance,D1,Some concerns,Y,,NI,,,,,,,,,,,,,,,,,,,,,,,
+C5b,Normalisation reference not shown to be stable; impact cannot be determined,D5,Some concerns,,,,,,,,,,,,,,,,,,Y,,,,NI,Y,,,
+C6,"Coded images excluded by an automated low-signal filter, more in treated wells",D5,High,,,,,,,,,,,,,,,,,,N,N,Y,Y,Y,Y,,,
+C6d4,"Same study, measurement domain: automated, masked readout",D4,Low,,,,,,,,,,,,,N,N,N,,,,,,,,,,,
+C7a,"No plan; test guideline fixes time point, exclusions, normalisation and analysis",D6,Low,,,,,,,,,,,,,,,,,,,,,,,,PY,N,N
+C7b,No plan; credible alternative time points or normalisations exist,D6,Some concerns,,,,,,,,,,,,,,,,,,,,,,,,NI,PN,PN

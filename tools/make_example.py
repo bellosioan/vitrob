@@ -48,14 +48,36 @@ def main():
     rng = random.Random(20261123)
     doms = [d["id"] for d in spec["domains"]]
     qids = [q["id"] for d in spec["domains"] for q in d["questions"]]
-    cols = (["study_id", "result_id", "assessor", "module", "B1", "B2", "B3"]
+    fields = [f["id"] for f in spec["result_fields"]]
+    ap2 = ["AP2_" + c for c in next(a for a in spec["additional_outputs"] if a["id"] == "AP2")["components"]]
+    cols = (["study_id", "result_id", "assessor", "module"] + fields + ["B1", "B2"]
             + ["q" + q for q in qids] + [d + "_final" for d in doms] + [d + "_reason" for d in doms]
-            + ["O1", "overall_final", "overall_reason", "U1", "AP1", "AP2", "notes"])
+            + ["O1", "overall_final", "overall_reason", "U1", "AP1_authentication", "AP1_register", "AP1"]
+            + ap2 + ["notes"])
+    # Second generator for values added after rc.2, so that the main sequence,
+    # and therefore the example answers and judgments, stay unchanged.
+    rng2 = random.Random(20261124)
+    example_fields = {
+        "A_target_outcome": "Secreted cytokine concentration",
+        "A_measurement": "ELISA on culture supernatant",
+        "A_manipulation": "Test compound, 10 uM, 24 h",
+        "A_comparator": "Vehicle (0.1% DMSO)",
+        "A_effect_measure": "Ratio of means, within run",
+        "C_effect_of_interest": "Applying",
+        "D_allocation_unit": "Well",
+        "D_replicate": "Run on a separate day",
+        "D_n_replicates": "3",
+        "D_biological_unit": "Cell line",
+        "D_observational_unit": "Technical well",
+        "E_analysis": "As reported",
+        "F_sources": "Article and supplement",
+    }
     rows = []
     for k in range(12):
         row = {c: "" for c in cols}
         row.update(study_id=f"Example study {chr(65 + k)}", result_id=f"Fig {k % 4 + 1}{'ABC'[k % 3]}",
-                   assessor="Example", module=MODULES[k % len(MODULES)], B1="Y", B2="Y", B3="N")
+                   assessor="Example", module=MODULES[k % len(MODULES)], B1="Y", B2="Y")
+        row.update(example_fields)
         if k == 11:  # one result stopped at the proceed check
             row.update(B1="N", notes="No concurrent comparator; not assessed")
             rows.append(row)
@@ -75,7 +97,12 @@ def main():
             row["O1"] = "N" if rng.random() < 0.8 else "Y"
         row["U1"] = rng.choice(["Y", "N", "NI", "NI"])
         row["AP1"] = rng.choice(["Verified", "Not verified", "Not verified"])
-        row["AP2"] = rng.choice(["Direct", "Direct", "Limited", "Uncertain"])
+        row["AP1_authentication"] = ("Confirms declared identity" if row["AP1"] == "Verified"
+                                     else "Not reported")
+        row["AP1_register"] = "Not listed"
+        row[ap2[0]] = rng.choice(["Direct", "Direct", "Limited", "Uncertain"])
+        for c in ap2[1:]:
+            row[c] = rng2.choice(["Direct", "Direct", "Limited", "Uncertain"])
         rows.append(row)
     out = root / "inst/extdata/example_assessments.csv"
     with open(out, "w", newline="", encoding="utf-8") as fh:
